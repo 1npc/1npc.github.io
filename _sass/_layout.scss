@@ -65,7 +65,8 @@ body.sticky-bottom-footer {
 
   .profile-hero-kicker {
     margin-bottom: 1.15rem;
-    color: rgba(255, 255, 255, 0.75);
+    color: #fff;
+    opacity: 0.75;
     font-size: 0.78rem;
     font-weight: 700;
     letter-spacing: 0.15em;
@@ -84,7 +85,8 @@ body.sticky-bottom-footer {
   .profile-hero-copy > p:not(.profile-hero-kicker) {
     max-width: 32rem;
     margin: 1.35rem 0 0;
-    color: rgba(255, 255, 255, 0.86);
+    color: #fff;
+    opacity: 0.86;
     font-size: clamp(1rem, 1.8vw, 1.3rem);
     line-height: 1.55;
   }
@@ -98,7 +100,7 @@ body.sticky-bottom-footer {
 
   a {
     padding: 0.8rem 1.25rem;
-    border: 1px solid rgba(255, 255, 255, 0.65);
+    border: 1px solid #fff;
     border-radius: 999px;
     color: #fff;
     font-size: 0.92rem;
@@ -120,12 +122,12 @@ body.sticky-bottom-footer {
 
     &:hover {
       color: #11243b;
-      background: rgba(255, 255, 255, 0.9);
+      background: #fff;
     }
   }
 
   .profile-hero-secondary:hover {
-    background: rgba(255, 255, 255, 0.12);
+    background: transparent;
   }
 }
 
