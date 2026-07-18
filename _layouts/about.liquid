@@ -4,17 +4,17 @@ layout: default
 <div class="post">
   {% if page.hero_image %}
     <section class="profile-hero" aria-labelledby="profile-hero-title">
-      <img src="{{ page.hero_image | relative_url }}" alt="Xiao Zhang in the mountains">
-      <div class="profile-hero-overlay">
-        <div class="profile-hero-copy">
-          <p class="profile-hero-kicker">Game AI · AI Characters · Neuro-Symbolic AI</p>
-          <h1 id="profile-hero-title">Xiao Zhang</h1>
-          <p>{{ page.subtitle }}</p>
-          <div class="profile-hero-actions">
-            <a class="profile-hero-primary" href="{{ '/publications/' | relative_url }}">Explore research</a>
-            <a class="profile-hero-secondary" href="{{ '/projects/' | relative_url }}">View projects</a>
-          </div>
+      <div class="profile-hero-copy">
+        <p class="profile-hero-kicker">Game AI · AI Characters · Neuro-Symbolic AI</p>
+        <h1 id="profile-hero-title">Xiao Zhang</h1>
+        <p>{{ page.subtitle }}</p>
+        <div class="profile-hero-actions">
+          <a class="profile-hero-primary" href="{{ '/publications/' | relative_url }}">Explore research</a>
+          <a class="profile-hero-secondary" href="{{ '/projects/' | relative_url }}">View projects</a>
         </div>
+      </div>
+      <div class="profile-hero-image">
+        <img src="{{ page.hero_image | relative_url }}" alt="Xiao Zhang in the mountains">
       </div>
     </section>
   {% else %}
