@@ -2,40 +2,30 @@
 layout: default
 ---
 <div class="post">
-  {% if page.hero_image %}
-    <section class="profile-hero" aria-labelledby="profile-hero-title">
-      <div class="profile-hero-copy">
-        <p class="profile-hero-kicker">Game AI · AI Characters · Neuro-Symbolic AI</p>
-        <h1 id="profile-hero-title">Xiao Zhang</h1>
-        <p>{{ page.subtitle }}</p>
-        <div class="profile-hero-actions">
-          <a class="profile-hero-primary" href="{{ '/publications/' | relative_url }}">Explore research</a>
-          <a class="profile-hero-secondary" href="{{ '/projects/' | relative_url }}">View projects</a>
-        </div>
-      </div>
-      <div class="profile-hero-image">
-        <img src="{{ page.hero_image | relative_url }}" alt="Xiao Zhang in the mountains">
-      </div>
-    </section>
-  {% else %}
-    <header class="post-header">
-      <h1 class="post-title">
-        {% if site.title == 'blank' %}
-          <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-          {{ site.last_name }}
-        {% else %}
-          {{ site.title }}
-        {% endif %}
-      </h1>
-      <p class="desc">{{ page.subtitle }}</p>
-    </header>
-  {% endif %}
+  <header class="post-header">
+    <h1 class="post-title">
+      {% if site.title == 'blank' %}
+        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
+        {{ site.last_name }}
+      {% else %}
+        {{ site.title }}
+      {% endif %}
+    </h1>
+    <p class="desc">{{ page.subtitle }}</p>
+  </header>
 
-  <article class="about-article">
-    {% if page.profile and page.hero_image == nil %}
+  <article>
+    {% if page.profile %}
       <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
         {% if page.profile.image %}
-          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+          {% if page.profile.image_root %}
+            {% assign profile_image_path = page.profile.image %}
+            {% assign profile_image_avoid_scaling = true %}
+            {% assign profile_image_cache_bust = false %}
+          {% else %}
+            {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+            {% assign profile_image_cache_bust = true %}
+          {% endif %}
           {% if page.profile.image_circular %}
             {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
           {% else %}
@@ -46,7 +36,7 @@ layout: default
       30vw, 95vw"{% endcapture %}
           {%
             include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-            cache_bust=true
+            cache_bust=profile_image_cache_bust avoid_scaling=profile_image_avoid_scaling
           %}
         {% endif %}
         {% if page.profile.more_info %}

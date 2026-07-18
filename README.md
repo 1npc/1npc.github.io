@@ -8,13 +8,13 @@ The short reference in [EDITING_GUIDE.md](EDITING_GUIDE.md) lists the files used
 
 The most frequently edited files are:
 
-- `_pages/about.md` — homepage text and research-focus cards
+- `_pages/about.md` — homepage text, research interests, and profile settings
 - `_bibliography/papers.bib` — publications and homepage-selected papers
 - `_news/*.md` — homepage news
 - `_posts/*.md` — research notes and blog posts
 - `_data/socials.yml` — email and social profiles
 - `_config.yml` — site-wide metadata and deployment URL
-- `xiao_zhang.jpg` — homepage hero image
+- `xiao_zhang.jpg` — homepage profile image
 
 ## Local preview
 
