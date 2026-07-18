@@ -1,0 +1,209 @@
+---
+---
+
+@misc{meng2026eviact,
+    title = {{EviACT}: An Evidence-to-Action Framework for Agentic Program Repair},
+    author = {Meng, Qianru and Zhang, Xiao and Ren, Zhaochun and Visser, Joost},
+    year = {2026},
+    month = may,
+    day = {26},
+    eprint = {2605.27238},
+    archivePrefix = {arXiv},
+    primaryClass = {cs.SE},
+    url = {https://arxiv.org/abs/2605.27238},
+    selected = {true},
+    abstract = {LLM-based agents have moved automated program repair from fixed-context patch generation to interactive repository-level repair. EviACT coordinates three evidence-driven guardrails across repair stages: a retrieval scaffold, a compile gate, and a test-driven gate.}
+}
+
+@inproceedings{zhang-etal-2026-knowledgeberg,
+    title = {{K}nowledge{B}erg: Evaluating Systematic Knowledge Coverage and Compositional Reasoning in Large Language Models},
+    author = {Zhang, Xiao and Meng, Qianru and Chen, Yongjian and Wang, Yumeng and Bos, Johan},
+    booktitle = {Findings of the Association for Computational Linguistics: ACL 2026},
+    month = jul,
+    year = {2026},
+    address = {San Diego, California, United States},
+    publisher = {Association for Computational Linguistics},
+    url = {https://aclanthology.org/2026.findings-acl.548/},
+    doi = {10.18653/v1/2026.findings-acl.548},
+    pages = {11272--11286},
+    selected = {true},
+    abstract = {Many real-world questions appear deceptively simple yet implicitly demand systematic coverage of a bounded knowledge universe and compositional set-based reasoning over that universe. KnowledgeBerg provides 4,800 multiple-choice questions derived from 1,183 enumeration seeds spanning 10 domains and 17 languages.}
+}
+
+@inproceedings{zhang-etal-2024-gaining,
+    title = "Gaining More Insight into Neural Semantic Parsing with Challenging Benchmarks",
+    author = "Zhang, Xiao  and
+      Wang, Chunliu  and
+      van Noord, Rik  and
+      Bos, Johan",
+    editor = "Bonial, Claire  and
+      Bonn, Julia  and
+      Hwang, Jena D.",
+    booktitle = "Proceedings of the Fifth International Workshop on Designing Meaning Representations @ LREC-COLING 2024",
+    month = 5,
+    year = "2024",
+    address = "Torino, Italia",
+    publisher = "ELRA and ICCL",
+    url = "https://aclanthology.org/2024.dmr-1.17/",
+    pages = "162--175",
+    preview={},
+    selected = {false},
+    abstract = "The Parallel Meaning Bank (PMB) serves as a corpus for semantic processing with a focus on semantic parsing and text generation. Currently, we witness an excellent performance of neural parsers and generators on the PMB. This might suggest that such semantic processing tasks have by and large been solved. We argue that this is not the case and that performance scores from the past on the PMB are inflated by non-optimal data splits and test sets that are too easy. In response, we introduce several changes. First, instead of the prior random split, we propose a more systematic splitting approach to improve the reliability of the standard test data. Second, except for the standard test set, we also propose two challenge sets: one with longer texts including discourse structure, and one that addresses compositional generalization. We evaluate five neural models for semantic parsing and meaning-to-text generation. Our results show that model performance declines (in some cases dramatically) on the challenge sets, revealing the limitations of neural models when confronting such challenges."
+}
+
+@inproceedings{wang-etal-2023-discourse,
+    title = "Discourse Representation Structure Parsing for {C}hinese",
+    author = "Wang, Chunliu  and
+      Zhang, Xiao  and
+      Bos, Johan",
+    editor = "Chatzikyriakidis, Stergios  and
+      de Paiva, Valeria",
+    booktitle = "Proceedings of the 4th Natural Logic Meets Machine Learning Workshop",
+    month = 6,
+    year = "2023",
+    address = "Nancy, France",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.naloma-1.7/",
+    pages = "62--74",
+    abstract = "Previous work has predominantly focused on monolingual English semantic parsing. We, instead, explore the feasibility of Chinese semantic parsing in the absence of labeled data for Chinese meaning representations. We describe the pipeline of automatically collecting the linearized Chinese meaning representation data for sequential-to-sequential neural networks. We further propose a test suite designed explicitly for Chinese semantic parsing, which provides fine-grained evaluation for parsing performance, where we aim to study Chinese parsing difficulties. Our experimental results show that the difficulty of Chinese semantic parsing is mainly caused by adverbs. Realizing Chinese parsing through machine translation and an English parser yields slightly lower performance than training a model directly on Chinese data."
+}
+
+
+@article{zhang-etal-2025-neural,
+    title = "Neural Semantic Parsing with Extremely Rich Symbolic Meaning Representations",
+    author = "Zhang, Xiao  and
+      Bouma, Gosse  and
+      Bos, Johan",
+    journal = "Computational Linguistics",
+    volume = "51",
+    number = "1",
+    month = 3,
+    year = "2025",
+    address = "Cambridge, MA",
+    publisher = "MIT Press",
+    url = "https://aclanthology.org/2025.cl-1.7/",
+    doi = "10.1162/coli_a_00542",
+    pages = "235--274",
+    selected = {true},
+    abstract = "Current open-domain neural semantics parsers show impressive performance. However, closer inspection of the symbolic meaning representations they produce reveals significant weaknesses: Sometimes they tend to merely copy character sequences from the source text to form symbolic concepts, defaulting to the most frequent word sense based in the training distribution. By leveraging the hierarchical structure of a lexical ontology, we introduce a novel compositional symbolic representation for concepts based on their position in the taxonomical hierarchy. This representation provides richer semantic information and enhances interpretability. We introduce a neural ``taxonomical'' semantic parser to utilize this new representation system of predicates, and compare it with a standard neural semantic parser trained on the traditional meaning representation format, employing a novel challenge set and evaluation metric for evaluation. Our experimental findings demonstrate that the taxonomical model, trained on much richer and complex meaning representations, is slightly subordinate in performance to the traditional model using the standard metrics for evaluation, but outperforms it when dealing with out-of-vocabulary concepts. We further show through neural model probing that training on a taxonomic representation enhances the model{'}s ability to learn the taxonomical hierarchy. This finding is encouraging for research in computational semantics that aims to combine data-driven distributional meanings with knowledge-based symbolic representations."
+}
+
+@article{saad-etal-2025-urdu,
+    title = "Semantic processing for Urdu: Corpus creation, parsing, and generation",
+    abstract = "Discourse representation structure (DRS), a formal meaning representation, has been used for both semantic parsing and natural language generation tasks and gained promising results for high-resource languages such as English and for the lesser-resourced European languages Italian, German, and Dutch. We investigate how we can employ DRS for the low-resource language Urdu for neural semantic parsing (translating Urdu sentences into formal meaning representations) and natural language generation (generating Urdu sentences from formal meaning representations). There are no annotated corpora for Urdu available, so we adopted a combined approach involving both manual annotations and rule-based procedures to transform English-aligned DRS into Urdu-aligned DRS through syntactic structure and word surface alignment, because word order in Urdu (subject–object–verb) differs from that of English (subject–verb–object). To further increase the amount of semantically annotated data, we developed lexical, grammatical, and named entity-based augmentation techniques. This resulted in an increase of nine times more data examples. Using the augmented meaning bank for Urdu, we developed a neural semantic parser and generator that benefited significantly from the augmented data and showed more generalization ability compared to the model without augmentation. We evaluated the effect of semantic data augmentation using a transformer-based state-of-the-art neural sequence-to-sequence architecture. Our implementation shows promising results for the semantic processing of Urdu and demonstrates that data augmentation increases performance (F1-Score) for semantic parsing from 67.12 to 76.81, and leads to substantially increased BLEU, BERT-Score, METEOR, ROUGE, and chrF scores for generation.",
+    keywords = "Parallel meaning bank, Semantic data augmentation, Urdu meaning bank, Urdu semantic parsing and generation, Urdu semantic representation",
+    author = "Amin, Muhammad Saad and Xiao Zhang and Luca Anselma and Alessandro Mazzei and Johan Bos",
+    year = "2025",
+    month = sep,
+    doi = "10.1007/s10579-025-09819-2",
+    url = "https://link.springer.com/article/10.1007/s10579-025-09819-2",
+    language = "English",
+    journal = "Language Resources and Evaluation",
+    volume = "59",
+    pages = "2469--2500",
+    issn = "1574-020X",
+    publisher = "Springer",
+}
+
+@misc{zhang2025retrievalaugmentedsemanticparsingimproving,
+      title={Retrieval-Augmented Semantic Parsing: Improving Generalization with Lexical Knowledge},
+      author={Xiao Zhang and Qianru Meng and Johan Bos},
+      year={2025},
+      month= 8,
+      day = 1,
+      eprint={2412.10207},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2412.10207},
+      selected = {false},
+      abstract = "Open-domain semantic parsing remains a challenging task, as neural models often rely on heuristics and struggle to handle unseen concepts. In this paper, we investigate the potential of large language models (LLMs) for this task and introduce Retrieval-Augmented Semantic Parsing (RASP), a simple yet effective approach that integrates external symbolic knowledge into the parsing process. Our experiments not only show that LLMs outperform previous encoder-decoder baselines for semantic parsing, but that RASP further enhances their ability to predict unseen concepts, nearly doubling the performance of previous models on out-of-distribution concepts. These findings highlight the promise of leveraging large language models and retrieval mechanisms for robust and open-domain semantic parsing."
+}
+
+
+@misc{lai2025multidimensionalconsistencyimprovesreasoning,
+      title={Multidimensional Consistency Improves Reasoning in Language Models},
+      author={Huiyuan Lai and Xiao Zhang and Malvina Nissim},
+      year={2025},
+      month= 5,
+      day = 1,
+      eprint={2503.02670},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2503.02670},
+      abstract = "While Large language models (LLMs) have proved able to address some complex reasoning tasks, we also know that they are highly sensitive to input variation, which can lead to different solution paths and final answers. Answer consistency across input variations can thus be taken as a sign of stronger confidence. Leveraging this insight, we introduce a framework, {\em Multidimensional Reasoning Consistency} where, focusing on math problems, models are systematically pushed to diversify solution paths towards a final answer, thereby testing them for answer consistency across multiple input variations. We induce variations in (i) order of shots in prompt, (ii) problem phrasing, and (iii) languages used. Extensive experiments on a large range of open-source state-of-the-art LLMs of various sizes show that reasoning consistency differs by variation dimension, and that by aggregating consistency across dimensions, our framework consistently enhances mathematical reasoning performance on both monolingual dataset GSM8K and multilingual dataset MGSM, especially for smaller models."
+}
+
+@inproceedings{zhang-bos-2025-neural,
+    title = "Is neural semantic parsing good at ellipsis resolution, or isn{'}t it?",
+    author = "Zhang, Xiao  and
+      Bos, Johan",
+    editor = "Evang, Kilian  and
+      Kallmeyer, Laura  and
+      Pogodalla, Sylvain",
+    booktitle = "Proceedings of the 16th International Conference on Computational Semantics",
+    month = sep,
+    year = "2025",
+    address = {D{\"u}sseldorf, Germany},
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.iwcs-main.13/",
+    pages = "137--142",
+    ISBN = "979-8-89176-316-6",
+    abstract = "Neural semantic parsers have shown good overall performance for a variety of linguistic phenomena, reaching semantic matching scores of more than 90{\%}. But how do such parsers perform on strongly context-sensitive phenomena, where large pieces of semantic information need to be duplicated to form a meaningful semantic representation? A case in point is English verb phrase ellipsis, a construct where entire verb phrases can be abbreviated by a single auxiliary verb. Are the otherwise known as powerful semantic parsers able to deal with ellipsis or aren{'}t they? We constructed a corpus of 120 cases of ellipsis with their fully resolved meaning representation and used this as a challenge set for a large battery of neural semantic parsers. Although these parsers performed very well on the standard test set, they failed in the instances with ellipsis. Data augmentation helped improve the parsing results. The reason for the difficulty of parsing elided phrases is not that copying semantic material is hard, but that usually occur in linguistically complicated contexts causing most of the parsing errors."
+}
+
+@inproceedings{10.1145/3746027.3755444,
+    author = {Zhang, Xiao and Bos, Johan},
+    title = {Multi-Modal Semantic Parsing for the Interpretation of Tombstone Inscriptions},
+    year = {2025},
+    isbn = {9798400720352},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/3746027.3755444},
+    doi = {10.1145/3746027.3755444},
+    abstract = {Tombstones are historically and culturally rich artifacts, encapsulating individual lives, community memory, historical narratives and artistic expression. Yet, many tombstones today face significant preservation challenges, including physical erosion, vandalism, environmental degradation, and political shifts. In this paper, we introduce a novel multi-modal framework for tombstone digitization, aiming to improve the interpretation, organization and retrieval of tombstone content. Our approach leverages vision-language models (VLMs) to translate tombstone images into structured Tombstone Meaning Representations (TMRs), capturing both image and text information. To further enrich semantic parsing, we incorporate retrieval-augmented generation (RAG) to integrate externally dependent elements such as toponyms, occupation codes, and ontological concepts. Compared to traditional OCR-based pipelines, our method improves parsing accuracy from an F1 score of 36.1 to 89.5. Furthermore, we evaluate the model's robustness across diverse linguistic and cultural inscriptions, and simulate physical degradation through image fusion to assess performance under noisy or damaged conditions. Our work represents the first attempt to formalize tombstone understanding using large vision-language models, presenting implications for heritage preservation. The code and supplementary materials are available at: https://github.com/LastDance500/Tombstone-Parsing.},
+    booktitle = {Proceedings of the 33rd ACM International Conference on Multimedia},
+    pages = {6672--6681},
+    numpages = {10},
+    keywords = {cemetery research, digital heritage, retrieval-augmented generation, semantic parsing, vision-language models},
+    location = {Dublin, Ireland},
+    series = {MM '25},
+    selected = {true}
+}
+
+@misc{zhang2025ontourlbenchmarkevaluatinglarge,
+      title={OntoURL: A Benchmark for Evaluating Large Language Models on Symbolic Ontological Understanding, Reasoning and Learning},
+      author={Xiao Zhang and Huiyuan Lai and Qianru Meng and Johan Bos},
+      year={2025},
+      month= 6,
+      day = 20,
+      eprint={2505.11031},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2505.11031},
+      selected = {true},
+      abstract = "Large language models (LLMs) have demonstrated remarkable capabilities across a range of natural language processing tasks, yet their ability to process structured symbolic knowledge remains underexplored. To address this gap, we propose a taxonomy of LLMs' ontological capabilities and introduce OntoURL, the first comprehensive benchmark designed to systematically evaluate LLMs' proficiency in handling ontologies -- formal, symbolic representations of domain knowledge through concepts, relationships, and instances. Based on the proposed taxonomy, OntoURL systematically assesses three dimensions: understanding, reasoning, and learning through 15 distinct tasks comprising 58,981 questions derived from 40 ontologies across 8 domains. Experiments with 20 open-source LLMs reveal significant performance differences across models, tasks, and domains, with current LLMs showing proficiency in understanding ontological knowledge but substantial weaknesses in reasoning and learning tasks. These findings highlight fundamental limitations in LLMs' capability to process symbolic knowledge and establish OntoURL as a critical benchmark for advancing the integration of LLMs with formal knowledge representations."
+}
+
+@inproceedings{meng2025whenretrievalhurts,
+    title = {When More Retrieval Hurts: Retrieval-Augmented Code Review Generation},
+    author = {Meng, Qianru and Zhang, Xiao and Ren, Zhaochen and Visser, Joost},
+    booktitle = {20th IJCNN},
+    year = {2025},
+    month = nov,
+    day = {7},
+    eprint = {2511.05302},
+    archivePrefix = {arXiv},
+    primaryClass = {cs.SE},
+    url = {https://arxiv.org/abs/2511.05302}
+}
+
+@inproceedings{meng2024combining,
+    title = {Combining Retrieval and Classification: Balancing Efficiency and Accuracy in Duplicate Bug Report Detection},
+    author = {Meng, Qianru and Zhang, Xiao and Ramackers, Guus and Visser, Joost},
+    booktitle = {Proceedings of the 18th International Conference on Software Engineering Advances},
+    year = {2024},
+    eprint = {2404.14877},
+    archivePrefix = {arXiv},
+    primaryClass = {cs.SE},
+    url = {https://arxiv.org/abs/2404.14877}
+}

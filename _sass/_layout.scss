@@ -1,0 +1,245 @@
+/******************************************************************************
+ * Content
+ ******************************************************************************/
+
+body {
+  padding-bottom: 70px;
+  color: var(--global-text-color);
+  background-color: var(--global-bg-color);
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    scroll-margin-top: 66px;
+  }
+}
+
+body.fixed-top-nav {
+  // Add some padding for the nav-bar.
+  padding-top: 56px;
+}
+
+body.sticky-bottom-footer {
+  // Remove padding below footer.
+  padding-bottom: 0;
+}
+
+.container {
+  max-width: $max-content-width;
+}
+
+// Homepage hero and research focus
+.profile-hero {
+  position: relative;
+  min-height: clamp(430px, 52vw, 600px);
+  margin: 1.5rem 0 3.5rem;
+  overflow: hidden;
+  border-radius: 28px;
+  background: #18283d;
+  box-shadow: 0 24px 70px rgba(18, 38, 63, 0.18);
+
+  > img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  .profile-hero-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    padding: clamp(2rem, 6vw, 5rem);
+    background: linear-gradient(90deg, rgba(7, 20, 36, 0.88) 0%, rgba(7, 20, 36, 0.66) 38%, rgba(7, 20, 36, 0.08) 72%);
+  }
+
+  .profile-hero-copy {
+    width: min(590px, 58%);
+  }
+
+  .profile-hero-kicker {
+    margin-bottom: 1.15rem;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    margin: 0;
+    color: #fff;
+    font-size: clamp(3.2rem, 7vw, 6rem);
+    font-weight: 750;
+    letter-spacing: -0.055em;
+    line-height: 0.94;
+  }
+
+  .profile-hero-copy > p:not(.profile-hero-kicker) {
+    max-width: 32rem;
+    margin: 1.35rem 0 0;
+    color: rgba(255, 255, 255, 0.86);
+    font-size: clamp(1rem, 1.8vw, 1.3rem);
+    line-height: 1.55;
+  }
+}
+
+.profile-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2rem;
+
+  a {
+    padding: 0.8rem 1.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.65);
+    border-radius: 999px;
+    color: #fff;
+    font-size: 0.92rem;
+    font-weight: 650;
+    text-decoration: none;
+    transition: transform 160ms ease, background-color 160ms ease, border-color 160ms ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  .profile-hero-primary {
+    border-color: #fff;
+    background: #fff;
+    color: #11243b;
+
+    &:hover {
+      color: #11243b;
+      background: rgba(255, 255, 255, 0.9);
+    }
+  }
+
+  .profile-hero-secondary:hover {
+    background: rgba(255, 255, 255, 0.12);
+  }
+}
+
+.about-article {
+  > .clearfix > h2:first-child {
+    margin-top: 0;
+    font-size: clamp(2rem, 4vw, 3rem);
+    letter-spacing: -0.035em;
+  }
+
+  > h2 {
+    margin-top: 3.75rem;
+    margin-bottom: 1.35rem;
+    font-size: clamp(1.7rem, 3vw, 2.25rem);
+    letter-spacing: -0.025em;
+  }
+
+  > .clearfix {
+    font-size: 1.06rem;
+    line-height: 1.78;
+  }
+}
+
+.research-focus {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 2.35rem 0;
+}
+
+.research-focus-card {
+  min-height: 230px;
+  padding: 1.5rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 18px;
+  background: var(--global-card-bg-color);
+  box-shadow: 0 10px 32px rgba(24, 47, 76, 0.06);
+
+  .research-focus-index {
+    color: var(--global-theme-color);
+    font-size: 0.78rem;
+    font-weight: 750;
+    letter-spacing: 0.12em;
+  }
+
+  h3 {
+    margin: 2.25rem 0 0.75rem;
+    font-size: 1.2rem;
+    letter-spacing: -0.02em;
+  }
+
+  p {
+    margin: 0;
+    color: var(--global-text-color-light);
+    font-size: 0.93rem;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 767px) {
+  .profile-hero {
+    min-height: 600px;
+    margin: 0.9rem 0 2.75rem;
+    border-radius: 22px;
+
+    > img {
+      object-position: 66% center;
+    }
+
+    .profile-hero-overlay {
+      align-items: flex-end;
+      padding: 2rem 1.5rem;
+      background: linear-gradient(0deg, rgba(6, 17, 31, 0.94) 0%, rgba(6, 17, 31, 0.72) 40%, rgba(6, 17, 31, 0.08) 76%);
+    }
+
+    .profile-hero-copy {
+      width: 100%;
+    }
+
+    h1 {
+      font-size: clamp(3.4rem, 18vw, 4.9rem);
+    }
+  }
+
+  .research-focus {
+    grid-template-columns: 1fr;
+  }
+
+  .research-focus-card {
+    min-height: 0;
+
+    h3 {
+      margin-top: 1.35rem;
+    }
+  }
+}
+
+// Profile
+.profile {
+  img {
+    width: 100%;
+  }
+}
+
+// TODO: redefine content layout.
+
+/******************************************************************************
+ * Publications
+ ******************************************************************************/
+
+// TODO: redefine publications layout.
+
+/*****************************************************************************
+* Projects
+*****************************************************************************/
+
+// TODO: redefine projects layout.
