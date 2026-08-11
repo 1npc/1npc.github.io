@@ -1,0 +1,450 @@
+/*******************************************************************************
+ * Custom layer on top of al-folio.
+ * Everything here is additive — the theme can still be updated underneath it.
+ ******************************************************************************/
+
+:root {
+  --x-accent: #{$blue-color};
+  --x-accent-soft: rgba(0, 118, 223, 0.06);
+  --x-surface: rgba(0, 0, 0, 0.022);
+  --x-rule: rgba(0, 0, 0, 0.1);
+}
+
+html[data-theme="dark"] {
+  --x-accent: #{$cyan-color};
+  --x-accent-soft: rgba(38, 152, 186, 0.12);
+  --x-surface: rgba(255, 255, 255, 0.035);
+  --x-rule: rgba(255, 255, 255, 0.13);
+}
+
+/*******************************************************************************
+ * About page: a fixed reading column plus a portrait rail.
+ *
+ * The theme floats the portrait inside the prose, which makes the measure jump
+ * from ~70 characters beside the image to ~130 below it. A two-column grid keeps
+ * every line the same, readable length.
+ ******************************************************************************/
+
+.about-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 35rem) 15rem;
+  grid-template-areas:
+    "header aside"
+    "main   aside";
+  column-gap: 3.5rem;
+  align-items: start;
+
+  // Stacked, the name in the portrait card would otherwise land above the h1
+  // and read as a duplicate. Header first in both layouts.
+  @media (max-width: 900px) {
+    grid-template-columns: minmax(0, 35rem);
+    grid-template-areas:
+      "header"
+      "aside"
+      "main";
+  }
+}
+
+.about-layout > .post-header {
+  grid-area: header;
+}
+
+.about-main {
+  grid-area: main;
+}
+
+.about-aside {
+  position: sticky;
+  top: 5rem;
+  grid-area: aside;
+
+  @media (max-width: 900px) {
+    position: static;
+    max-width: 17rem;
+    margin-bottom: 1.75rem;
+  }
+}
+
+.aside-social {
+  margin-top: 0.9rem;
+
+  .contact-icons {
+    font-size: 1.15rem;
+    text-align: left;
+
+    a {
+      margin-right: 0.55rem;
+    }
+  }
+}
+
+/*******************************************************************************
+ * Page header
+ ******************************************************************************/
+
+.post .post-header,
+.post .header-bar {
+  .post-title {
+    letter-spacing: -0.025em;
+    line-height: 1.05;
+  }
+
+  .desc {
+    max-width: 34em;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--global-text-color-light);
+    text-transform: none;
+    font-style: normal;
+  }
+}
+
+.about-page .post-header {
+  margin-bottom: 1.5rem;
+}
+
+/*******************************************************************************
+ * Prose rhythm — dense, but at a readable measure
+ ******************************************************************************/
+
+.post > article,
+.about-main > article {
+  p,
+  li {
+    margin-bottom: 0.85rem;
+    line-height: 1.62;
+  }
+
+  h2 {
+    margin-top: 2.1rem;
+    margin-bottom: 0.65rem;
+    font-size: 1.22rem;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+  }
+
+  h2 a {
+    text-decoration: none;
+  }
+}
+
+/*******************************************************************************
+ * Availability callout
+ ******************************************************************************/
+
+.availability {
+  margin: 0 0 1.35rem;
+  padding: 0.7rem 0.9rem;
+  border-left: 2px solid var(--x-accent);
+  border-radius: 0 3px 3px 0;
+  background-color: var(--x-accent-soft);
+
+  p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.55;
+  }
+
+  a {
+    font-weight: 500;
+  }
+}
+
+.availability-tag {
+  display: block;
+  margin-bottom: 0.15rem;
+  color: var(--x-accent);
+  font-size: 0.67rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/*******************************************************************************
+ * Timeline — no rules, just alignment and colour
+ ******************************************************************************/
+
+.timeline {
+  margin: 1.1rem 0 0.5rem;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 6.5rem 1fr;
+  gap: 1rem;
+  margin-bottom: 0.85rem;
+
+  @media (max-width: 576px) {
+    grid-template-columns: 1fr;
+    gap: 0.05rem;
+  }
+}
+
+.timeline-when {
+  padding-top: 0.12rem;
+  color: var(--global-text-color-light);
+  font-size: 0.83rem;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.timeline-what {
+  h3 {
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  p {
+    margin: 0.08rem 0 0;
+    color: var(--global-text-color-light);
+    font-size: 0.88rem;
+    line-height: 1.5;
+  }
+}
+
+/*******************************************************************************
+ * News / latest posts tables
+ ******************************************************************************/
+
+// mdb.min.css sets vertical padding via `table.table-sm th` (0,1,2), so these
+// selectors have to out-specify it rather than rely on source order.
+.news,
+.latest-posts {
+  table.table {
+    margin-bottom: 0;
+
+    th,
+    td {
+      padding: 0.28rem 0.75rem 0.28rem 0;
+      font-size: 0.9rem;
+      line-height: 1.5;
+      vertical-align: top;
+    }
+
+    th {
+      width: 6.5rem;
+      color: var(--global-text-color-light);
+      font-weight: 400;
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+    }
+  }
+}
+
+/*******************************************************************************
+ * Portrait
+ ******************************************************************************/
+
+.profile {
+  width: 100%;
+
+  .more-info {
+    margin-top: 0.7rem;
+    padding: 0;
+    border: 0;
+    background: none;
+    color: var(--global-text-color-light);
+    font-family: inherit;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    text-align: left;
+
+    p {
+      display: block;
+      margin: 0;
+    }
+
+    strong {
+      color: var(--global-text-color);
+      font-weight: 600;
+    }
+  }
+}
+
+/*******************************************************************************
+ * CV
+ ******************************************************************************/
+
+// The theme pins the year badge to min-width: 75px inline, which clips longer
+// ranges like "2022 - PRESENT". Let it grow to fit.
+.cv .badge {
+  min-width: 0 !important;
+  padding: 0.3em 0.6em;
+  white-space: nowrap;
+}
+
+/*******************************************************************************
+ * Blog index — the theme centres a 5rem coloured banner, which matches nothing
+ * else on the site. Bring it in line with the other page headers.
+ ******************************************************************************/
+
+.post .header-bar {
+  padding: 0 0 1.25rem;
+  border-bottom: 1px solid var(--x-rule);
+  text-align: left;
+
+  h1 {
+    margin-bottom: 0.35rem;
+    color: var(--global-text-color);
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+  }
+
+  h2 {
+    max-width: 34em;
+    margin: 0;
+    color: var(--global-text-color-light);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+}
+
+.tag-category-list {
+  padding-top: 0.9rem;
+  border-bottom: 1px solid var(--x-rule);
+  text-align: left;
+
+  ul {
+    justify-content: flex-start;
+  }
+}
+
+.post-list {
+  > li {
+    .post-meta,
+    .post-tags {
+      font-size: 0.85rem;
+    }
+  }
+
+  // Thumbnails default to object-fit: cover, which mangles wide banner logos.
+  // Letterbox them instead of cropping.
+  img.card-img {
+    width: 100%;
+    height: auto;
+    max-height: 6.5rem;
+    object-fit: contain;
+    object-position: left center;
+  }
+}
+
+/*******************************************************************************
+ * Post body
+ ******************************************************************************/
+
+.post .post-content,
+.post > article {
+  // Keep running text at a readable measure while letting tables, figures and
+  // code blocks use the full container. Post bodies are wrapped in
+  // #markdown-content, so this matches one level down as well as directly.
+  > p,
+  > ul,
+  > ol,
+  > blockquote,
+  > h2,
+  > h3,
+  > h4,
+  > #markdown-content > p,
+  > #markdown-content > ul,
+  > #markdown-content > ol,
+  > #markdown-content > blockquote,
+  > #markdown-content > h2,
+  > #markdown-content > h3,
+  > #markdown-content > h4 {
+    max-width: 36rem;
+  }
+
+  // Wide results tables scroll inside their own box instead of blowing out the
+  // page. `table` alone can't scroll, so the wrapper does it.
+  .table-wrapper,
+  .post-table {
+    overflow-x: auto;
+    margin-bottom: 1.2rem;
+  }
+
+  table {
+    display: block;
+    width: max-content;
+    max-width: 100%;
+    margin-bottom: 1.4rem;
+    overflow-x: auto;
+    font-size: 0.82rem;
+    font-variant-numeric: tabular-nums;
+
+    th,
+    td {
+      padding: 0.28rem 0.7rem 0.28rem 0;
+      white-space: nowrap;
+    }
+
+    th {
+      border-bottom: 1px solid var(--x-rule);
+      font-weight: 600;
+    }
+
+    td:first-child,
+    th:first-child {
+      white-space: normal;
+    }
+  }
+
+  h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.4rem;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+}
+
+.post-hero {
+  margin: 0 auto 1.6rem;
+}
+
+.post-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.4rem 0 1.8rem;
+
+  a {
+    padding: 0.3rem 0.75rem;
+    border: 1px solid var(--x-rule);
+    border-radius: 3px;
+    color: var(--global-text-color);
+    font-size: 0.85rem;
+    text-decoration: none;
+
+    &:hover {
+      border-color: var(--x-accent);
+      color: var(--x-accent);
+      text-decoration: none;
+    }
+  }
+}
+
+/*******************************************************************************
+ * Selected publications — trim the theme's generous spacing
+ ******************************************************************************/
+
+.publications {
+  ol.bibliography li {
+    margin-bottom: 1.1rem;
+
+    .title {
+      font-size: 0.98rem;
+      line-height: 1.4;
+    }
+
+    .author,
+    .periodical {
+      font-size: 0.87rem;
+      line-height: 1.45;
+    }
+  }
+}

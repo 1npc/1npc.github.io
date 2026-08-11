@@ -1,8 +1,8 @@
 ---
 layout: about
-title: About me
+title: About
 permalink: /
-subtitle: PhD student in computational linguistics, large language models, and intelligent game characters.
+subtitle: PhD candidate in computational linguistics. I want machines to genuinely understand what we mean — and I want to prove it in game characters.
 
 profile:
   align: right
@@ -10,7 +10,9 @@ profile:
   image_root: true
   image_circular: false
   more_info: >
-    <p>PhD Student</p>
+    <p><strong>Xiao Zhang</strong> &nbsp;章潇</p>
+    <p>PhD candidate</p>
+    <p>Computational Linguistics</p>
     <p>University of Groningen</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
@@ -27,31 +29,52 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-## About me
+<div class="availability">
+  <span class="availability-tag">Open to opportunities</span>
+  <p>
+    Finishing my PhD in 2026 and looking for a <strong>postdoc or industry research role</strong>
+    in game AI, AI characters, agents, or applied LLM research.
+    <a href="mailto:xiao.zhang@rug.nl">Email me</a> &middot;
+    <a href="{{ '/cv/' | relative_url }}">CV</a>
+  </p>
+</div>
 
-I am a PhD student in **Computational Linguistics** at the [University of Groningen](https://www.rug.nl/), supervised by [Johan Bos](https://www.rug.nl/staff/johan.bos/?lang=en) and [Gosse Bouma](https://www.rug.nl/staff/g.bouma/?lang=en). My research lies at the intersection of language, structured knowledge, large language models, and interactive intelligent agents.
+I want machines to actually understand what we mean — not to produce answers that happen to sound right, but to build meaning in a form you can inspect and hold them to. That has been the through-line of everything I have worked on, and it is why I am now moving toward game characters. A game world is the most demanding place I know to test whether a system understands anything: it has to hold a conversation, remember what happened, know what is true around it, and stay itself for forty hours.
 
-**I am currently seeking postdoctoral opportunities** in Game AI, AI characters, large language models, and intelligent agents, where I can connect language-based reasoning with interactive systems.
+## The path here
 
-My work began with formal meaning representations and neural semantic parsing. I have studied how models handle unseen concepts, ellipsis, multilingual data, and multimodal cultural artifacts, with the broader goal of making machine-interpreted meaning more systematic and reliable. More recently, I have investigated retrieval-augmented models, ontological understanding, compositional reasoning, consistency in LLMs, and evidence-driven software agents.
+I started in information engineering at Xi'an Jiaotong University, which taught me how systems are built and left me curious about the one thing it could not explain — how language carries meaning at all. That question took me to Leiden for a master's with [Suzan Verberne](https://www.universiteitleiden.nl/en/staffmembers/suzan-verberne), working where natural language processing meets information retrieval, and my first real look at the gap between what a model retrieves and what a person meant. Since 2022 I have been in Groningen with [Johan Bos](https://www.rug.nl/staff/johan.bos/?lang=en) and [Gosse Bouma](https://www.rug.nl/staff/g.bouma/?lang=en), working on computational semantics: getting machines to turn sentences into formal representations of meaning, and then finding out where that breaks.
 
-I am now extending this foundation toward **NPCs and Game AI**. I am particularly interested in AI characters that can maintain memory and personality, ground their actions in a changing game world, communicate naturally with players, and remain controllable under real production constraints. My long-term goal is to connect the flexibility of LLMs with structured world models and explicit reasoning to build believable, dependable, and production-ready game agents.
+Over four years the question quietly changed shape. It stopped being about whether a parser gets a sentence right and became whether a system knows anything at all — which is what most of my recent work on large language models, ontologies, and retrieval is really asking.
 
-## Academic journey
+<div class="timeline">
+  <div class="timeline-item">
+    <div class="timeline-when">2022 &ndash; now</div>
+    <div class="timeline-what">
+      <h3>PhD, Computational Linguistics &middot; <a href="https://www.rug.nl/">University of Groningen</a></h3>
+      <p>Computational semantics, neural parsing, and what large language models actually know.</p>
+    </div>
+  </div>
+  <div class="timeline-item">
+    <div class="timeline-when">2020 &ndash; 2022</div>
+    <div class="timeline-what">
+      <h3>MSc, Computer Science &middot; <a href="https://www.universiteitleiden.nl/en">Leiden University</a></h3>
+      <p>Natural language processing and information retrieval.</p>
+    </div>
+  </div>
+  <div class="timeline-item">
+    <div class="timeline-when">2016 &ndash; 2020</div>
+    <div class="timeline-what">
+      <h3>BEng, Information Engineering &middot; <a href="https://en.xjtu.edu.cn/">Xi'an Jiaotong University</a></h3>
+      <p>Signals, systems, and enough engineering to be dangerous with a GPU.</p>
+    </div>
+  </div>
+</div>
 
-**2022–Present — PhD Student in Computational Linguistics, [University of Groningen](https://www.rug.nl/)**<br>
-Supervised by [Johan Bos](https://www.rug.nl/staff/johan.bos/?lang=en) and [Gosse Bouma](https://www.rug.nl/staff/g.bouma/?lang=en). My doctoral research spans computational semantics, neural semantic parsing, formal meaning representations, knowledge-grounded language models, and the evaluation of LLM reasoning.
+## What I want to build
 
-**2020–2022 — M.Sc. in Computer Science, [Leiden University](https://www.universiteitleiden.nl/en)**<br>
-My master's work was supervised by [Suzan Verberne](https://www.universiteitleiden.nl/en/staffmembers/suzan-verberne), whose research connects natural language processing and information retrieval. This period established my foundation in NLP, information access, machine learning, and empirical evaluation.
+Characters worth believing in. Not a chatbot in a costume — something with a memory that persists, a personality that does not drift, a grip on what is actually true in the world it lives in, and behaviour a designer can ship. The field can do the talking part now. Remembering, staying consistent, staying grounded, staying controllable: that is still open, and it is the same problem I have been working on all along, in a setting where anyone can tell within minutes whether it works.
 
-**2016–2020 — Bachelor's degree in Information Engineering, [Xi'an Jiaotong University](https://en.xjtu.edu.cn/)**<br>
-My undergraduate training provided the engineering and computational foundation that later led me toward natural language processing and artificial intelligence.
+Longer term I want structured world models and the flexibility of large language models to stop being alternatives to each other. Games are where that gets proven, because a player will find every seam.
 
-## Research directions
-
-- **Computational semantics and semantic parsing.** I work with structured meaning representations, particularly Discourse Representation Structures, and study semantic generalization across unseen concepts, linguistic phenomena, languages, and modalities.
-- **Knowledge-grounded and reliable LLMs.** My recent work examines retrieval augmentation, symbolic ontologies, systematic knowledge coverage, compositional reasoning, consistency, and evidence-based agent behavior.
-- **NPCs, AI characters, and Game AI.** I am exploring architectures for character dialogue, memory, personality, world modeling, long-horizon behavioral consistency, and controllable decision-making in production game environments.
-
-I welcome collaborations across academia and industry, especially on intelligent characters, player-facing agents, neuro-symbolic language systems, and production-ready Game AI. Explore my [publications]({{ '/publications/' | relative_url }}), [projects]({{ '/projects/' | relative_url }}), or [research notes]({{ '/blog/' | relative_url }}).
+I am always glad to hear from people working on intelligent characters, player-facing agents, or neuro-symbolic language systems, in academia or industry.

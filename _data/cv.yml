@@ -1,97 +1,108 @@
 - title: General Information
   type: map
   contents:
-    - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
+    - name: Name
+      value: Xiao Zhang (章潇)
+    - name: Position
+      value: PhD candidate, Computational Linguistics, University of Groningen
+    - name: Email
+      value: xiao.zhang@rug.nl
+    - name: Website
+      value: <a href="https://1npc.github.io">1npc.github.io</a>
+    - name: Google Scholar
+      value: <a href="https://scholar.google.com/citations?user=UNuhtPgAAAAJ">UNuhtPgAAAAJ</a>
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: PhD, Computational Linguistics
+      institution: University of Groningen, Groningen, The Netherlands
+      year: 2022 - present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - Supervised by Johan Bos and Gosse Bouma.
+        - Computational semantics, neural semantic parsing, and the evaluation of knowledge and reasoning in large language models.
+    - title: MSc, Computer Science
+      institution: Leiden University, Leiden, The Netherlands
+      year: 2020 - 2022
       description:
-        - Description 1.
-        - Description 2.
+        - Supervised by Suzan Verberne, at the intersection of natural language processing and information retrieval.
+    - title: BEng, Information Engineering
+      institution: Xi'an Jiaotong University, Xi'an, China
+      year: 2016 - 2020
 
-- title: Experience
-  type: time_table
-  contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
-      description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
-
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
-
-- title: Academic Interests
+- title: Research Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Computational semantics
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Formal meaning representations, in particular Discourse Representation Structures
+        - Neural semantic parsing and meaning-to-text generation
+        - Semantic generalisation across unseen concepts, linguistic phenomena, languages, and modalities
+    - title: Knowledge and reasoning in language models
       items:
-        - Description 1.
-        - Description 2.
+        - Benchmarking systematic knowledge coverage and compositional reasoning
+        - Symbolic ontologies and retrieval augmentation
+        - Reasoning consistency and evidence-driven agent behaviour
+    - title: Game AI and AI characters
+      items:
+        - Character dialogue with persistent memory and stable personality
+        - Grounding agent behaviour in explicit world state
+        - Controllability and long-horizon behavioural consistency in production settings
 
-- title: Other Interests
+- title: Publications
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - Peer-reviewed work appears at ACL (Findings), ACM Multimedia, IWCS, IJCNN, and in the journals <em>Computational Linguistics</em> and <em>Language Resources and Evaluation</em>. A full, up-to-date list is on the <a href="/publications/">publications page</a>.
+
+# ---------------------------------------------------------------------------
+# Sections below are scaffolding. Uncomment and fill in as they apply — the
+# page renders whatever is present here and silently skips what is not.
+# ---------------------------------------------------------------------------
+#
+# - title: Experience
+#   type: time_table
+#   contents:
+#     - title: Research Intern
+#       institution: Somewhere, City, Country
+#       year: 2024
+#       description:
+#         - What you did.
+#
+# - title: Talks and Presentations
+#   type: time_table
+#   contents:
+#     - title: Talk title
+#       institution: Venue, City
+#       year: 2025
+#
+# - title: Teaching
+#   type: time_table
+#   contents:
+#     - title: Course name
+#       institution: University of Groningen
+#       year: 2024
+#       description:
+#         - Teaching assistant; lab sessions and grading.
+#
+# - title: Academic Service
+#   type: list
+#   contents:
+#     - Reviewer for ACL / EMNLP / ...
+#
+# - title: Awards and Grants
+#   type: time_table
+#   contents:
+#     - year: 2025
+#       items:
+#         - Award name
+#
+# - title: Languages and Skills
+#   type: nested_list
+#   contents:
+#     - title: Languages
+#       items:
+#         - Chinese (native)
+#         - English (fluent)
+#     - title: Technical
+#       items:
+#         - Python, PyTorch, Hugging Face

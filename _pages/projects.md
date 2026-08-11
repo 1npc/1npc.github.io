@@ -1,16 +1,17 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
-description: A growing collection of your cool projects.
-nav: true
+description: Code and systems I have built.
+nav: false
 nav_order: 3
 horizontal: false
 ---
 
 <!-- pages/projects.md -->
 <p>
-Selected research and engineering projects will be added here.
+Selected research and engineering projects. Add entries as markdown files in <code>_projects/</code>,
+then set <code>nav: true</code> in the front matter of this page to show it in the navigation bar.
 </p>
 
 <div class="projects">
