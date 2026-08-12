@@ -17,18 +17,18 @@
   contents:
     - title: PhD, Computational Linguistics
       institution: University of Groningen, Groningen, The Netherlands
-      year: 2022 - present
+      year: 2022 – now
       description:
         - Supervised by Johan Bos and Gosse Bouma.
         - Computational semantics, neural semantic parsing, and the evaluation of knowledge and reasoning in large language models.
     - title: MSc, Computer Science
       institution: Leiden University, Leiden, The Netherlands
-      year: 2020 - 2022
+      year: 2020 – 2022
       description:
         - Supervised by Suzan Verberne, at the intersection of natural language processing and information retrieval.
     - title: BEng, Information Engineering
       institution: Xi'an Jiaotong University, Xi'an, China
-      year: 2016 - 2020
+      year: 2016 – 2020
 
 - title: Research Interests
   type: nested_list

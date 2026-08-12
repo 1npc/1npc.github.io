@@ -269,12 +269,37 @@ html[data-theme="dark"] {
  * CV
  ******************************************************************************/
 
-// The theme pins the year badge to min-width: 75px inline, which clips longer
-// ranges like "2022 - PRESENT". Let it grow to fit.
-.cv .badge {
-  min-width: 0 !important;
-  padding: 0.3em 0.6em;
-  white-space: nowrap;
+// The theme renders CV years as a bold blue pill with a drop shadow, pinned to
+// min-width: 75px inline so longer ranges clip. Render them as plain muted text
+// instead, matching the timeline on the homepage.
+.cv {
+  // Must match the theme's own `.cv .card .list-group-item .badge` chain — it
+  // sets colour and background with !important at higher specificity.
+  .badge,
+  .card .list-group-item .badge {
+    min-width: 0 !important;
+    padding: 0 !important;
+    background: none !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    color: var(--global-text-color-light) !important;
+    font-size: 0.85rem;
+    font-weight: 400 !important;
+    font-variant-numeric: tabular-nums;
+    text-transform: none !important;
+    white-space: nowrap;
+  }
+
+  // The year column is 75px inline, too narrow for a full range once it is text.
+  .row > .col-md-2.text-center {
+    width: 7rem !important;
+    padding-top: 0.15rem;
+    text-align: left !important;
+  }
+
+  .table-cv {
+    width: 100%;
+  }
 }
 
 /*******************************************************************************
@@ -360,14 +385,19 @@ html[data-theme="dark"] {
     max-width: 36rem;
   }
 
-  // Wide results tables scroll inside their own box instead of blowing out the
-  // page. `table` alone can't scroll, so the wrapper does it.
-  .table-wrapper,
-  .post-table {
-    overflow-x: auto;
-    margin-bottom: 1.2rem;
+  h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.4rem;
+    font-size: 1rem;
+    font-weight: 600;
   }
+}
 
+// Wide results tables scroll inside their own box instead of blowing out the
+// page. Scoped to #markdown-content — the CV page also renders inside
+// .post > article, and turning .table-cv into a scroll box clipped the year
+// column and left a scrollbar under it.
+.post-content #markdown-content {
   table {
     display: block;
     width: max-content;
@@ -392,13 +422,6 @@ html[data-theme="dark"] {
     th:first-child {
       white-space: normal;
     }
-  }
-
-  h3 {
-    margin-top: 1.5rem;
-    margin-bottom: 0.4rem;
-    font-size: 1rem;
-    font-weight: 600;
   }
 }
 
