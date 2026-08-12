@@ -62,11 +62,11 @@
       location: San Diego, USA
       description:
         - "Poster — <em>KnowledgeBerg: Evaluating Systematic Knowledge Coverage and Compositional Reasoning in Large Language Models</em>"
-    - title: Utrecht University
+    - title: Invited talks
       year: Jun 2026
       location: Utrecht, NL
       description:
-        - Invited talk.
+        - "Utrecht University (Jun 2026), Leiden University, Nanjing University, among others."
     - title: 20th IJCNN
       year: Jun 2026
       location: Maastricht, NL
@@ -109,7 +109,7 @@
 - title: Academic Service
   type: list
   contents:
-    - "<strong>Reviewer</strong> — ACL Rolling Review (multiple cycles), IWCS 2025, ACM Multimedia 2025, IEEE WCCI 2025"
+    - "<strong>Reviewer</strong> — ACL Rolling Review (multiple cycles), ACM Multimedia 2025, IEEE WCCI 2025, IWCS 2025, among others"
     - "<strong>Programme committee</strong> — <a href=\"https://2026.rage-kg.org/\">RAGE-KG 2026</a>, 3rd Workshop on Retrieval-Augmented Generation Enabled by Knowledge Graphs, at ISWC 2026"
 
 # ---------------------------------------------------------------------------
