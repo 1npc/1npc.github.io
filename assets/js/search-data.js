@@ -41,16 +41,16 @@ ninja.data = [{
             window.location.href = "/blog/2025/ontourl/";
           
         },
-      },{id: "news-retrieval-augmented-code-review-at-ijcnn",
-          title: 'Retrieval-augmented code review at IJCNN',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_3/";
-            },},{id: "news-eviact-is-now-available",
+      },{id: "news-eviact-is-now-available",
           title: 'EviACT is now available',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_2/";
+            },},{id: "news-retrieval-augmented-code-review-at-ijcnn",
+          title: 'Retrieval-augmented code review at IJCNN',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_3/";
             },},{id: "news-knowledgeberg-appears-in-findings-of-acl-2026",
           title: 'KnowledgeBerg appears in Findings of ACL 2026',
           description: "",
