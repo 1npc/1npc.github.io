@@ -54,6 +54,71 @@
   contents:
     - Peer-reviewed work appears at ACL (Findings), ACM Multimedia, IWCS, IJCNN, and in the journals <em>Computational Linguistics</em> and <em>Language Resources and Evaluation</em>. A full, up-to-date list is on the <a href="/publications/">publications page</a>.
 
+- title: Talks and Presentations
+  type: time_table
+  contents:
+    - title: ACL 2026 (Findings)
+      year: Jul 2026
+      location: San Diego, USA
+      description:
+        - "Poster — <em>KnowledgeBerg: Evaluating Systematic Knowledge Coverage and Compositional Reasoning in Large Language Models</em>"
+    - title: Utrecht University
+      year: Jun 2026
+      location: Utrecht, NL
+      description:
+        - Invited talk.
+    - title: 20th IJCNN
+      year: 2026
+      description:
+        - "Poster — <em>When More Retrieval Hurts: Retrieval-Augmented Code Review Generation</em>"
+    - title: 33rd ACM Multimedia
+      year: Oct 2025
+      location: Dublin, IE
+      description:
+        - "Oral — <em>Multi-Modal Semantic Parsing for the Interpretation of Tombstone Inscriptions</em>"
+    - title: 16th IWCS
+      year: Sep 2025
+      location: Düsseldorf, DE
+      description:
+        - "Two oral presentations, one of them <em>Is neural semantic parsing good at ellipsis resolution, or isn't it?</em>"
+    - title: ACL 2025
+      year: 2025
+      description:
+        - Poster.
+    - title: 5th DMR @ LREC-COLING 2024
+      year: May 2024
+      location: Turin, IT
+      description:
+        - "Oral — <em>Gaining More Insight into Neural Semantic Parsing with Challenging Benchmarks</em>"
+
+- title: Teaching
+  type: time_table
+  contents:
+    - title: Semantic Web Technology
+      institution: University of Groningen
+      year: 2025 – 2026
+      description:
+        - Guest lecture.
+      linkitems:
+        - link: https://ocasys.rug.nl/2025-2026/catalog/course/LIX002M05#LIX002M05.2025-2026.1
+          linkname: course
+    - title: Computational Semantics
+      institution: University of Groningen
+      year: 2025 – 2026
+      description:
+        - Guest lecture.
+      linkitems:
+        - link: https://ocasys.rug.nl/2025-2026/catalog/course/LIX021M05#LIX021M05.2025-2026.1
+          linkname: course
+    - title: Responsible AI
+      institution: University of Groningen
+      year: 2025 – 2026
+      description:
+        - Guest lecture.
+      linkitems:
+        - link: https://ocasys.rug.nl/2025-2026/catalog/course/WMAI029-05
+          linkname: course
+
 # ---------------------------------------------------------------------------
 # Sections below are scaffolding. Uncomment and fill in as they apply — the
 # page renders whatever is present here and silently skips what is not.
@@ -67,22 +132,6 @@
 #       year: 2024
 #       description:
 #         - What you did.
-#
-# - title: Talks and Presentations
-#   type: time_table
-#   contents:
-#     - title: Talk title
-#       institution: Venue, City
-#       year: 2025
-#
-# - title: Teaching
-#   type: time_table
-#   contents:
-#     - title: Course name
-#       institution: University of Groningen
-#       year: 2024
-#       description:
-#         - Teaching assistant; lab sessions and grading.
 #
 # - title: Academic Service
 #   type: list

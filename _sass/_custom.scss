@@ -300,6 +300,58 @@ html[data-theme="dark"] {
   .table-cv {
     width: 100%;
   }
+
+  // The location sits under the year in the same column.
+  .location {
+    margin: 0.15rem 0 0;
+    color: var(--global-text-color-light);
+    font-size: 0.78rem;
+    line-height: 1.3;
+  }
+
+  // Entry descriptions are single facts, not a bulleted argument. Drop the
+  // marker and the deep indent so they read as a subtitle under the venue.
+  ul.items {
+    margin: 0.2rem 0 0;
+    padding-left: 0;
+    list-style: none;
+
+    > li {
+      margin-bottom: 0.15rem;
+      font-size: 0.88rem;
+      line-height: 1.5;
+    }
+  }
+
+  .title {
+    font-size: 0.98rem;
+  }
+
+  .institution {
+    font-size: 0.9rem;
+  }
+
+  // Course links: quiet inline links rather than heavy buttons.
+  .container-links {
+    margin-top: 0.25rem;
+  }
+
+  .btncv {
+    padding: 0.1rem 0.5rem;
+    border: 1px solid var(--x-rule);
+    border-radius: 3px;
+    background: none;
+    box-shadow: none;
+    color: var(--global-text-color-light);
+    font-size: 0.76rem;
+    text-transform: none;
+
+    &:hover {
+      border-color: var(--x-accent);
+      color: var(--x-accent);
+      text-decoration: none;
+    }
+  }
 }
 
 /*******************************************************************************
