@@ -87,7 +87,7 @@
       year: Jul 2025
       location: Vienna, AT
       description:
-        - Poster.
+        - "Poster — <em>Neural Semantic Parsing with Extremely Rich Symbolic Meaning Representations</em> (<em>Computational Linguistics</em> journal track)"
     - title: 5th DMR @ LREC-COLING 2024
       year: May 2024
       location: Turin, IT
@@ -106,6 +106,12 @@
         - '<a href="https://ocasys.rug.nl/2025-2026/catalog/course/LIX021M05#LIX021M05.2025-2026.1">Computational Semantics</a>'
         - '<a href="https://ocasys.rug.nl/2025-2026/catalog/course/WMAI029-05">Responsible AI</a>'
 
+- title: Academic Service
+  type: list
+  contents:
+    - "<strong>Reviewer</strong> — ACL Rolling Review (multiple cycles), IWCS 2025, ACM Multimedia 2025, IEEE WCCI 2025"
+    - "<strong>Programme committee</strong> — <a href=\"https://2026.rage-kg.org/\">RAGE-KG 2026</a>, 3rd Workshop on Retrieval-Augmented Generation Enabled by Knowledge Graphs, at ISWC 2026"
+
 # ---------------------------------------------------------------------------
 # Sections below are scaffolding. Uncomment and fill in as they apply — the
 # page renders whatever is present here and silently skips what is not.
@@ -119,11 +125,6 @@
 #       year: 2024
 #       description:
 #         - What you did.
-#
-# - title: Academic Service
-#   type: list
-#   contents:
-#     - Reviewer for ACL / EMNLP / ...
 #
 # - title: Awards and Grants
 #   type: time_table
