@@ -68,7 +68,8 @@
       description:
         - Invited talk.
     - title: 20th IJCNN
-      year: 2026
+      year: Jun 2026
+      location: Maastricht, NL
       description:
         - "Poster — <em>When More Retrieval Hurts: Retrieval-Augmented Code Review Generation</em>"
     - title: 33rd ACM Multimedia
@@ -80,9 +81,11 @@
       year: Sep 2025
       location: Düsseldorf, DE
       description:
-        - "Two oral presentations, one of them <em>Is neural semantic parsing good at ellipsis resolution, or isn't it?</em>"
+        - "Oral — <em>Retrieval-Augmented Semantic Parsing: Improving Generalization with Lexical Knowledge</em>"
+        - "Oral — <em>Is neural semantic parsing good at ellipsis resolution, or isn't it?</em>"
     - title: ACL 2025
-      year: 2025
+      year: Jul 2025
+      location: Vienna, AT
       description:
         - Poster.
     - title: 5th DMR @ LREC-COLING 2024
@@ -94,30 +97,14 @@
 - title: Teaching
   type: time_table
   contents:
-    - title: Semantic Web Technology
+    # One entry, not three: every field except the course name was identical.
+    - title: Guest lectures
       institution: University of Groningen
       year: 2025 – 2026
       description:
-        - Guest lecture.
-      linkitems:
-        - link: https://ocasys.rug.nl/2025-2026/catalog/course/LIX002M05#LIX002M05.2025-2026.1
-          linkname: course
-    - title: Computational Semantics
-      institution: University of Groningen
-      year: 2025 – 2026
-      description:
-        - Guest lecture.
-      linkitems:
-        - link: https://ocasys.rug.nl/2025-2026/catalog/course/LIX021M05#LIX021M05.2025-2026.1
-          linkname: course
-    - title: Responsible AI
-      institution: University of Groningen
-      year: 2025 – 2026
-      description:
-        - Guest lecture.
-      linkitems:
-        - link: https://ocasys.rug.nl/2025-2026/catalog/course/WMAI029-05
-          linkname: course
+        - '<a href="https://ocasys.rug.nl/2025-2026/catalog/course/LIX002M05#LIX002M05.2025-2026.1">Semantic Web Technology</a>'
+        - '<a href="https://ocasys.rug.nl/2025-2026/catalog/course/LIX021M05#LIX021M05.2025-2026.1">Computational Semantics</a>'
+        - '<a href="https://ocasys.rug.nl/2025-2026/catalog/course/WMAI029-05">Responsible AI</a>'
 
 # ---------------------------------------------------------------------------
 # Sections below are scaffolding. Uncomment and fill in as they apply — the

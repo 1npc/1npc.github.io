@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Retrieval-augmented code review at IJCNN"
-date: 2025-11-07 09:00:00+0100
+date: 2026-06-21 09:00:00+0200
 inline: false
 related_posts: false
 ---
