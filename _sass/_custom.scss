@@ -162,6 +162,15 @@ html[data-theme="dark"] {
   text-transform: uppercase;
 }
 
+// Inline, the long address pushed "CV" onto a line of its own. Give the two
+// actions their own row so they read as actions and never orphan.
+.availability-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.6rem;
+}
+
 /*******************************************************************************
  * Timeline — no rules, just alignment and colour
  ******************************************************************************/
@@ -486,20 +495,24 @@ html[data-theme="dark"] {
   flex-wrap: wrap;
   gap: 0.5rem;
   margin: 1.4rem 0 1.8rem;
+}
 
-  a {
-    padding: 0.3rem 0.75rem;
-    border: 1px solid var(--x-rule);
-    border-radius: 3px;
-    color: var(--global-text-color);
-    font-size: 0.85rem;
+// One chip idiom, used by the homepage callout and by post link rows.
+.post-links a,
+.availability-links a {
+  padding: 0.28rem 0.7rem;
+  border: 1px solid var(--x-rule);
+  border-radius: 3px;
+  background-color: var(--global-bg-color);
+  color: var(--global-text-color);
+  font-size: 0.83rem;
+  line-height: 1.35;
+  text-decoration: none;
+
+  &:hover {
+    border-color: var(--x-accent);
+    color: var(--x-accent);
     text-decoration: none;
-
-    &:hover {
-      border-color: var(--x-accent);
-      color: var(--x-accent);
-      text-decoration: none;
-    }
   }
 }
 

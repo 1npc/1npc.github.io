@@ -34,9 +34,11 @@ latest_posts:
   <p>
     Finishing my PhD in 2026 and looking for a <strong>postdoc or industry research role</strong>
     in game AI, AI characters, agents, or applied LLM research.
-    <a href="mailto:{{ site.data.socials.email | encode_email }}">{{ site.data.socials.email }}</a> &middot;
-    <a href="{{ '/cv/' | relative_url }}">CV</a>
   </p>
+  <div class="availability-links">
+    <a href="mailto:{{ site.data.socials.email | encode_email }}">{{ site.data.socials.email }}</a>
+    <a href="{{ '/cv/' | relative_url }}">CV</a>
+  </div>
 </div>
 
 I want machines to actually understand what we mean — not to produce answers that happen to sound right, but to build meaning in a form you can inspect and hold them to. That has been the through-line of everything I have worked on, and it is why I am now moving toward game characters. A game world is the most demanding place I know to test whether a system understands anything: it has to hold a conversation, remember what happened, know what is true around it, and stay itself for forty hours.
