@@ -34,7 +34,7 @@ latest_posts:
   <p>
     Finishing my PhD in 2026 and looking for a <strong>postdoc or industry research role</strong>
     in game AI, AI characters, agents, or applied LLM research.
-    <a href="mailto:xiao.zhang@rug.nl">Email me</a> &middot;
+    <a href="mailto:{{ site.data.socials.email | encode_email }}">{{ site.data.socials.email }}</a> &middot;
     <a href="{{ '/cv/' | relative_url }}">CV</a>
   </p>
 </div>

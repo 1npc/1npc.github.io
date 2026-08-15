@@ -7,7 +7,7 @@ first_name: Xiao
 middle_name:
 last_name: Zhang
 contact_note: >
-  xiao.zhang@rug.nl
+  xiao_is_npc@outlook.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Xiao Zhang is a computational linguistics PhD candidate at the University of Groningen,
   working on formal meaning representation, knowledge in large language models, and AI game characters.
