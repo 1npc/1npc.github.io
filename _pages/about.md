@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: PhD candidate in computational linguistics. I want machines to genuinely understand what we mean — and I want to prove it in game characters.
+subtitle: PhD candidate in computational linguistics. I build benchmarks that test whether a system really knows what it is talking about — lately, game characters.
 
 profile:
   align: right
@@ -41,13 +41,15 @@ latest_posts:
   </div>
 </div>
 
-I want machines to actually understand what we mean — not to produce answers that happen to sound right, but to build meaning in a form you can inspect and hold them to. That has been the through-line of everything I have worked on, and it is why I am now moving toward game characters. A game world is the most demanding place I know to test whether a system understands anything: it has to hold a conversation, remember what happened, know what is true around it, and stay itself for forty hours.
+I work on meaning: getting it into a form a machine can act on, and finding out when the machine has it wrong. For most of my PhD that was semantic parsing — mapping sentences onto formal structures — and it has since turned into benchmarks for what large language models actually know.
+
+Right now it is pointed at game characters. I built **[NPCBank](https://npcbank.org)** to ask something the field mostly skips: when you ask the same NPC the same question in a private room, after a betrayal, and in front of an enemy, does the voice stay theirs while the answer moves? It holds 9,785 cases across 17 characters and three universes, and every case is inspectable — the prompt, the character's current state, the source evidence behind it, and the contract the judge scores against.
 
 ## The path here
 
-I started in information engineering at Xi'an Jiaotong University, which taught me how systems are built and left me curious about the one thing it could not explain — how language carries meaning at all. That question took me to Leiden for a master's with [Suzan Verberne](https://www.universiteitleiden.nl/en/staffmembers/suzan-verberne), working where natural language processing meets information retrieval, and my first real look at the gap between what a model retrieves and what a person meant. Since 2022 I have been in Groningen with [Johan Bos](https://www.rug.nl/staff/johan.bos/?lang=en) and [Gosse Bouma](https://www.rug.nl/staff/g.bouma/?lang=en), working on computational semantics: getting machines to turn sentences into formal representations of meaning, and then finding out where that breaks.
+I started in information engineering at Xi'an Jiaotong University, which gave me the engineering and none of the linguistics. That gap sent me to Leiden for a master's with [Suzan Verberne](https://www.universiteitleiden.nl/en/staffmembers/suzan-verberne), on the seam between language processing and information retrieval. Since 2022 I have been in Groningen with [Johan Bos](https://www.rug.nl/staff/johan.bos/?lang=en) and [Gosse Bouma](https://www.rug.nl/staff/g.bouma/?lang=en): Discourse Representation Structures, neural parsers, and the challenge sets that show where they fall over.
 
-Over four years the question quietly changed shape. It stopped being about whether a parser gets a sentence right and became whether a system knows anything at all — which is what most of my recent work on large language models, ontologies, and retrieval is really asking.
+Four years in, the question has drifted. Early on it was whether a parser gets a sentence right. Now it is whether a system knows anything you can hold it to, which is what the work on ontologies, retrieval augmentation, and reasoning consistency is really asking.
 
 <div class="timeline">
   <div class="timeline-item">
@@ -75,8 +77,12 @@ Over four years the question quietly changed shape. It stopped being about wheth
 
 ## What I want to build
 
-Characters worth believing in. Not a chatbot in a costume — something with a memory that persists, a personality that does not drift, a grip on what is actually true in the world it lives in, and behaviour a designer can ship. The field can do the talking part now. Remembering, staying consistent, staying grounded, staying controllable: that is still open, and it is the same problem I have been working on all along, in a setting where anyone can tell within minutes whether it works.
+Characters that hold up.
 
-Longer term I want structured world models and the flexibility of large language models to stop being alternatives to each other. Games are where that gets proven, because a player will find every seam.
+Talking is the part that already works. What does not yet work is a character who remembers what you did three hours ago, keeps their personality when a player leans on it, and knows what is currently true in a world that keeps moving — without ever saying the thing a designer has to patch out afterwards.
+
+NPCBank came out of not being able to measure any of that. It keeps what a character *is* apart from what is currently *true of them*, because collapsing the two is how a benchmark loses the ability to say why a model behaved differently. That is the same instinct as the parsing work: make the structure explicit enough that you can check it.
+
+Longer term I want structured world models and language models to stop being rival approaches. Games are where that gets settled, because a player will find every seam.
 
 I am always glad to hear from people working on intelligent characters, player-facing agents, or neuro-symbolic language systems, in academia or industry.
