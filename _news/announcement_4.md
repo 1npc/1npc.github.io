@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "NPCBank is live at npcbank.org"
-date: 2026-08-29 09:00:00+0200
+date: 2026-08-24 09:00:00+0200
 inline: false
 related_posts: false
 ---
