@@ -6,4 +6,4 @@ inline: false
 related_posts: false
 ---
 
-NPCBank is a benchmark for game-character dialogue: 9,785 cases across 17 characters and three universes, each one carrying the character's state, the source evidence behind it, and the contract it is judged against.
+A benchmark for game-character dialogue. Each case carries the character's state, the evidence behind it, and the contract it is judged against.

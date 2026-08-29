@@ -43,7 +43,7 @@ latest_posts:
 
 I work on meaning: getting it into a form a machine can act on, and finding out when the machine has it wrong. For most of my PhD that was semantic parsing — mapping sentences onto formal structures — and it has since turned into benchmarks for what large language models actually know.
 
-Right now it is pointed at game characters. I built **[NPCBank](https://npcbank.org)** to ask something the field mostly skips: when you ask the same NPC the same question in a private room, after a betrayal, and in front of an enemy, does the voice stay theirs while the answer moves? It holds 9,785 cases across 17 characters and three universes, and every case is inspectable — the prompt, the character's current state, the source evidence behind it, and the contract the judge scores against.
+Right now it is pointed at game characters. I built **[NPCBank](https://npcbank.org)** for a question the field mostly skips: ask the same NPC the same thing in a private room, after a betrayal, and in front of an enemy — does the voice stay theirs while the answer moves? Every case is inspectable: the prompt, the character's state, the evidence behind it, and the contract it is judged against.
 
 ## The path here
 
