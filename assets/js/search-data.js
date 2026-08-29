@@ -56,6 +56,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_1/";
+            },},{id: "news-npcbank-is-live-at-npcbank-org",
+          title: 'NPCBank is live at npcbank.org',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_4/";
             },},{
         id: 'social-email',
         title: 'email',
@@ -90,6 +95,13 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://scholar.google.com/citations?user=UNuhtPgAAAAJ", "_blank");
+        },
+      },{
+        id: 'social-work',
+        title: 'Work',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://npcbank.org", "_blank");
         },
       },{
         id: 'social-x',
