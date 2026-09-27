@@ -18,20 +18,21 @@ html[data-theme="dark"] {
 }
 
 /*******************************************************************************
- * About page: a fixed reading column plus a portrait rail.
+ * About page: a reading column plus a portrait rail.
  *
  * The theme floats the portrait inside the prose, which makes the measure jump
  * from ~70 characters beside the image to ~130 below it. A two-column grid keeps
- * every line the same, readable length.
+ * every line the same length. The column takes whatever the portrait leaves, so
+ * the page spans the full container instead of floating in a band of margin.
  ******************************************************************************/
 
 .about-layout {
   display: grid;
-  grid-template-columns: minmax(0, 35rem) 15rem;
+  grid-template-columns: minmax(0, 1fr) 20rem;
   grid-template-areas:
     "header aside"
     "main   aside";
-  column-gap: 3.5rem;
+  column-gap: 4.5rem;
   align-items: start;
 
   // Stacked, the name in the portrait card would otherwise land above the h1
@@ -90,7 +91,7 @@ html[data-theme="dark"] {
   }
 
   .desc {
-    max-width: 34em;
+    max-width: 44em;
     margin-top: 0.5rem;
     margin-bottom: 0;
     font-size: 1rem;
@@ -382,7 +383,7 @@ html[data-theme="dark"] {
   }
 
   h2 {
-    max-width: 34em;
+    max-width: 44em;
     margin: 0;
     color: var(--global-text-color-light);
     font-size: 1rem;
@@ -443,7 +444,7 @@ html[data-theme="dark"] {
   > #markdown-content > h2,
   > #markdown-content > h3,
   > #markdown-content > h4 {
-    max-width: 36rem;
+    max-width: 46rem;
   }
 
   h3 {
