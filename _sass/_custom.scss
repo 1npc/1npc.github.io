@@ -173,6 +173,130 @@ html[data-theme="dark"] {
 }
 
 /*******************************************************************************
+ * Research threads — the current focus as a wide card with its figure, the
+ * other two threads as a pair beneath it.
+ ******************************************************************************/
+
+.research {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 0.5rem;
+
+  @media (max-width: 700px) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.research-card {
+  padding: 1.1rem 1.2rem 1.15rem;
+  border: 1px solid var(--x-rule);
+  border-radius: 4px;
+  background-color: var(--x-surface);
+
+  h3 {
+    margin: 0 0 0.45rem;
+    font-size: 1.05rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    line-height: 1.35;
+  }
+
+  // Out-specify the article prose rhythm, which is set for running text.
+  .about-main > article & p {
+    margin-bottom: 0.6rem;
+    font-size: 0.92rem;
+    line-height: 1.58;
+  }
+
+  .post-links {
+    margin: 0.9rem 0 0;
+  }
+}
+
+.research-kicker {
+  display: block;
+  margin-bottom: 0.3rem;
+  color: var(--x-accent);
+  font-size: 0.67rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.research-feature {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: 14rem minmax(0, 1fr);
+  gap: 1.6rem;
+  align-items: center;
+  padding: 1.4rem 1.5rem;
+  border-color: var(--x-accent);
+  background-color: var(--x-accent-soft);
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  @media (max-width: 700px) {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+  }
+}
+
+.research-figure {
+  display: block;
+
+  img {
+    display: block;
+    width: 100%;
+    max-width: 14rem;
+    height: auto;
+    transition: transform 0.25s ease;
+  }
+
+  &:hover img {
+    transform: rotate(-4deg) scale(1.02);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    img {
+      transition: none;
+    }
+
+    &:hover img {
+      transform: none;
+    }
+  }
+}
+
+.research-works {
+  margin: 0.75rem 0 0;
+  padding: 0;
+  list-style: none;
+
+  .about-main > article & li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0 0.75rem;
+    margin: 0;
+    padding: 0.3rem 0;
+    border-top: 1px solid var(--x-rule);
+    font-size: 0.85rem;
+    line-height: 1.45;
+  }
+
+  a {
+    font-weight: 500;
+  }
+
+  span {
+    color: var(--global-text-color-light);
+  }
+}
+
+/*******************************************************************************
  * Timeline — no rules, just alignment and colour
  ******************************************************************************/
 

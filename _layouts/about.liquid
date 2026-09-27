@@ -17,7 +17,12 @@ layout: default
 
     <div class="about-main">
       <article>
-        {{ content }}
+        {% comment %}
+          The page body can mark a split with <!-- lists -->: what comes before it
+          leads the page, what comes after it closes the page below the lists.
+        {% endcomment %}
+        {% assign about_parts = content | split: '<!-- lists -->' %}
+        {{ about_parts[0] }}
 
         <!-- News -->
         {% if page.announcements and page.announcements.enabled %}
@@ -25,6 +30,14 @@ layout: default
             <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
           </h2>
           {% include news.liquid limit=true %}
+        {% endif %}
+
+        <!-- Selected papers -->
+        {% if page.selected_papers %}
+          <h2>
+            <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected publications</a>
+          </h2>
+          {% include selected_papers.liquid %}
         {% endif %}
 
         <!-- Latest posts -->
@@ -35,13 +48,7 @@ layout: default
           {% include latest_posts.liquid %}
         {% endif %}
 
-        <!-- Selected papers -->
-        {% if page.selected_papers %}
-          <h2>
-            <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected publications</a>
-          </h2>
-          {% include selected_papers.liquid %}
-        {% endif %}
+        {{ about_parts[1] }}
 
         {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
           {% include newsletter.liquid center=true %}

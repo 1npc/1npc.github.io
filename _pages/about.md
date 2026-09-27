@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: PhD candidate in computational linguistics. I build benchmarks that test whether a system really knows what it is talking about — lately, game characters.
+subtitle: PhD candidate in computational linguistics, working on meaning, knowledge, and lately the characters that live in games.
 
 profile:
   align: right
@@ -41,15 +41,55 @@ latest_posts:
   </div>
 </div>
 
-I work on meaning: getting it into a form a machine can act on, and finding out when the machine has it wrong. For most of my PhD that was semantic parsing — mapping sentences onto formal structures — and it has since turned into benchmarks for what large language models actually know.
+I work on meaning in machines: giving it a form they can act on, and finding out when they get it wrong. The work began in computational semantics, grew into the question of what large language models actually know, and has lately turned toward the characters that live in games.
 
-Right now it is pointed at game characters. I built **[NPCBank](https://npcbank.org)** for a question the field mostly skips: ask the same NPC the same thing in a private room, after a betrayal, and in front of an enemy — does the voice stay theirs while the answer moves? Every case is inspectable: the prompt, the character's state, the evidence behind it, and the contract it is judged against.
+## Research
+
+<div class="research">
+  <div class="research-card research-feature">
+    <a class="research-figure" href="https://npcbank.org/blog-introducing-npcbank.html">
+      <img src="{{ '/assets/img/npcbank/capabilities.webp' | relative_url }}" width="640" height="640" alt="The NPCBank capability map: what a character should preserve, and what should follow its state." loading="lazy">
+    </a>
+    <div class="research-body">
+      <span class="research-kicker">Current focus &middot; Characters</span>
+      <h3>NPCBank, the Non-Player Character Bank</h3>
+      <p>A designed world, however beautiful, is still a script. Language models have begun to loosen it, yet between a model that talks and a character that lives, the distance is still wide.</p>
+      <p>I built NPCBank to measure that distance. A living character must change where its state demands change and hold where its identity demands stability, so every case states what a reply must accomplish and what it must preserve, with the evidence behind both open to inspection.</p>
+      <div class="post-links">
+        <a href="https://npcbank.org">npcbank.org &#8599;</a>
+        <a href="https://npcbank.org/blog-introducing-npcbank.html">Read the introduction &#8599;</a>
+      </div>
+    </div>
+  </div>
+  <div class="research-card">
+    <span class="research-kicker">Knowledge</span>
+    <h3>What models know</h3>
+    <p>Whether large language models can operate on knowledge rather than merely recognise it: ontologies, systematic coverage, retrieval, and reasoning that stays consistent.</p>
+    <ul class="research-works">
+      <li><a href="https://arxiv.org/abs/2505.11031">OntoURL</a> <span>Journal of Web Semantics</span></li>
+      <li><a href="https://aclanthology.org/2026.findings-acl.548/">KnowledgeBerg</a> <span>Findings of ACL 2026</span></li>
+      <li><a href="https://arxiv.org/abs/2503.02670">Multidimensional reasoning consistency</a> <span>preprint</span></li>
+    </ul>
+  </div>
+  <div class="research-card">
+    <span class="research-kicker">Meaning</span>
+    <h3>Meaning made explicit</h3>
+    <p>Neural parsing into Discourse Representation Structures, across languages and modalities, and the challenge sets that show where parsers fall over.</p>
+    <ul class="research-works">
+      <li><a href="https://aclanthology.org/2025.cl-1.7/">Taxonomical parsing</a> <span>Computational Linguistics 2025</span></li>
+      <li><a href="https://aclanthology.org/2025.iwcs-main.5/">Retrieval-augmented parsing</a> <span>IWCS 2025</span></li>
+      <li><a href="https://doi.org/10.1145/3746027.3755444">Tombstone inscriptions</a> <span>ACM Multimedia 2025</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- lists -->
 
 ## The path here
 
-I started in information engineering at Xi'an Jiaotong University, which gave me the engineering and none of the linguistics. That gap sent me to Leiden for a master's with [Suzan Verberne](https://www.universiteitleiden.nl/en/staffmembers/suzan-verberne), on the seam between language processing and information retrieval. Since 2022 I have been in Groningen with [Johan Bos](https://www.rug.nl/staff/johan.bos/?lang=en) and [Gosse Bouma](https://www.rug.nl/staff/g.bouma/?lang=en): Discourse Representation Structures, neural parsers, and the challenge sets that show where they fall over.
+I trained first as an engineer, in information engineering at Xi'an Jiaotong University. The missing linguistics took me to Leiden for a master's with [Suzan Verberne](https://www.universiteitleiden.nl/en/staffmembers/suzan-verberne), between language processing and information retrieval, and in 2022 to Groningen, where I work with [Johan Bos](https://www.rug.nl/staff/johan.bos/?lang=en) and [Gosse Bouma](https://www.rug.nl/staff/g.bouma/?lang=en) on formal meaning and the challenge sets that show where neural parsers fall over.
 
-Four years in, the question has drifted. Early on it was whether a parser gets a sentence right. Now it is whether a system knows anything you can hold it to, which is what the work on ontologies, retrieval augmentation, and reasoning consistency is really asking.
+Four years in, the question has moved from whether a parser gets a sentence right to whether a system knows anything you can hold it to.
 
 <div class="timeline">
   <div class="timeline-item">
@@ -77,12 +117,8 @@ Four years in, the question has drifted. Early on it was whether a parser gets a
 
 ## What I want to build
 
-Characters that hold up.
+Characters that hold up: that remember what you did three hours ago, keep their personality when a player leans on it, and know what is true in a world that keeps moving. Getting there will take state-aware reasoning, inference light enough for a player's own machine, and memory that keeps both secrets and goals.
 
-Talking is the part that already works. What does not yet work is a character who remembers what you did three hours ago, keeps their personality when a player leans on it, and knows what is currently true in a world that keeps moving — without ever saying the thing a designer has to patch out afterwards.
-
-NPCBank came out of not being able to measure any of that. It keeps what a character *is* apart from what is currently *true of them*, because collapsing the two is how a benchmark loses the ability to say why a model behaved differently. That is the same instinct as the parsing work: make the structure explicit enough that you can check it.
-
-Longer term I want structured world models and language models to stop being rival approaches. Games are where that gets settled, because a player will find every seam.
+Longer term, I want structured world models and language models to stop being rival approaches. Games are where that will be settled, because players find every seam.
 
 I am always glad to hear from people working on intelligent characters, player-facing agents, or neuro-symbolic language systems, in academia or industry.
