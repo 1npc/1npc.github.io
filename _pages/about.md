@@ -68,7 +68,7 @@ I work on meaning in machines: giving it a form they can act on, and finding out
     <ul class="research-works">
       <li><a href="https://arxiv.org/abs/2505.11031">OntoURL</a> <span>Journal of Web Semantics</span></li>
       <li><a href="https://aclanthology.org/2026.findings-acl.548/">KnowledgeBerg</a> <span>Findings of ACL 2026</span></li>
-      <li><a href="https://arxiv.org/abs/2503.02670">Multidimensional reasoning consistency</a> <span>preprint</span></li>
+      <li><a href="https://arxiv.org/abs/2503.02670">Reasoning consistency</a> <span>AACL-IJCNLP 2026</span></li>
     </ul>
   </div>
   <div class="research-card">
