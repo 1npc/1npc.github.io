@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-ontourl-a-benchmark-for-ontological-understanding-reasoning-and-learning",
+        },{id: "post-from-a-model-that-talks-to-a-character-that-lives",
+        
+          title: 'From a model that talks to a character that lives <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "Introducing NPCBank, source-grounded game characters with inspectable dialogue cases, and three challenges for building characters that adapt to their world without losing themselves.",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://npcbank.org/blog-introducing-npcbank.html", "_blank");
+          
+        },
+      },{id: "post-ontourl-a-benchmark-for-ontological-understanding-reasoning-and-learning",
         
           title: "OntoURL: A Benchmark for Ontological Understanding, Reasoning and Learning",
         
@@ -61,6 +72,16 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_4/";
+            },},{id: "news-multidimensional-reasoning-consistency-at-aacl-ijcnlp-2026",
+          title: 'Multidimensional reasoning consistency at AACL-IJCNLP 2026',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_6/";
+            },},{id: "news-ontourl-accepted-at-the-journal-of-web-semantics",
+          title: 'OntoURL accepted at the Journal of Web Semantics',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_5/";
             },},{
         id: 'social-email',
         title: 'email',
