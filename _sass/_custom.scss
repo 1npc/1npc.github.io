@@ -755,3 +755,29 @@ html[data-theme="dark"] {
     display: none;
   }
 }
+
+// Theme-matched figure pairs in posts: each chart ships a light and a dark render,
+// and the one matching the current theme is shown.
+.post-figure {
+  margin: 1.8rem 0 2rem;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .fig-dark {
+    display: none;
+  }
+}
+
+html[data-theme="dark"] .post-figure {
+  .fig-light {
+    display: none;
+  }
+
+  .fig-dark {
+    display: block;
+  }
+}
