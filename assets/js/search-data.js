@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-from-a-model-that-talks-to-a-character-that-lives",
+        },{id: "post-some-failed-ideas-in-semantic-parsing",
+        
+          title: "Some failed ideas in semantic parsing",
+        
+        description: "Four ideas for DRS and AMR parsing that did not survive a matched baseline — RL post-training, a logic-verified reward, a translation-invariance reward, and DRS as a meaning checker for machine translation.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/some-failed-ideas-in-semantic-parsing/";
+          
+        },
+      },{id: "post-from-a-model-that-talks-to-a-character-that-lives",
         
           title: 'From a model that talks to a character that lives <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
