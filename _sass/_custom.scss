@@ -761,10 +761,13 @@ html[data-theme="dark"] {
 .post-figure {
   margin: 1.8rem 0 2rem;
 
+  // Charts are drawn at their reading size; never stretch them to the column.
   img {
     display: block;
-    width: 100%;
+    width: auto;
+    max-width: 100%;
     height: auto;
+    margin: 0 auto;
   }
 
   .fig-dark {
