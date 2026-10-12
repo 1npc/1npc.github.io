@@ -661,3 +661,113 @@ html[data-theme="dark"] {
     }
   }
 }
+
+/*******************************************************************************
+ * Publication links — quiet text, not a row of outlined uppercase buttons.
+ * Thirteen papers × three buttons made the links the loudest thing on the
+ * page; the titles should be. Same markup, so the abstract toggle still works.
+ ******************************************************************************/
+
+.publications ol.bibliography li .links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.15rem 1rem;
+  margin-top: 0.3rem;
+
+  a.btn {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: none;
+    box-shadow: none;
+    color: var(--global-text-color-light);
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 1.4;
+    text-transform: none;
+
+    &:hover,
+    &:focus {
+      background: none;
+      color: var(--x-accent);
+      text-decoration: none;
+    }
+  }
+}
+
+/*******************************************************************************
+ * CV — sections separated by whitespace and a hairline, like every other page,
+ * instead of six shadowed Bootstrap cards. The markup carries `mt-3 p-3`
+ * utilities, which are !important, so the overrides have to be too.
+ ******************************************************************************/
+
+.cv {
+  .card {
+    margin-top: 2.4rem !important;
+    padding: 0 !important;
+    border: 0;
+    border-radius: 0;
+    background: none;
+    box-shadow: none !important;
+
+    &:first-of-type {
+      margin-top: 0.5rem !important;
+    }
+  }
+
+  .card-title {
+    margin-bottom: 0.4rem;
+    padding-bottom: 0.45rem;
+    border-bottom: 1px solid var(--x-rule);
+    font-size: 1.15rem;
+    font-weight: 600 !important;
+    letter-spacing: -0.01em;
+  }
+
+  .list-group-item {
+    padding: 0.85rem 0;
+    border-color: var(--x-rule);
+    background: none;
+  }
+
+  // The institution icon sits in its own cell and pushes the name sideways.
+  table.institution tr td:first-child {
+    display: none;
+  }
+
+  // Research interests: quiet subheadings and tight lists.
+  // Bootstrap's .font-italic is !important.
+  .list-group-item h5.font-italic {
+    margin-bottom: 0.3rem;
+    font-size: 0.98rem;
+    font-style: normal !important;
+    font-weight: 600;
+  }
+
+  // Titles and institutions carry ml-md-4 (1.5rem, !important) while the
+  // descriptions under them do not, so the left edge zigzags. Align them.
+  .ml-md-4 {
+    margin-left: 0 !important;
+  }
+
+  ul.subitems {
+    margin-bottom: 0;
+    padding-left: 1.1rem;
+
+    li {
+      margin-bottom: 0.15rem;
+      font-size: 0.9rem;
+      line-height: 1.55;
+    }
+  }
+}
+
+// On phones the thumbnail column stacks under the meta line and floats there
+// on its own; it carries nothing the title does not, so drop it.
+@media (max-width: 575.98px) {
+  .post-list .col-sm-3 {
+    display: none;
+  }
+}
