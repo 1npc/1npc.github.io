@@ -20,6 +20,8 @@
             <td>
               {% if item.inline %}
                 {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+              {% elsif item.redirect %}
+                <a class="news-title" href="{{ item.redirect }}">{{ item.title }}</a>
               {% else %}
                 <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
               {% endif %}
