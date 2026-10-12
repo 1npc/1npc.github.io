@@ -173,30 +173,27 @@ html[data-theme="dark"] {
 }
 
 /*******************************************************************************
- * Research threads — the current focus as a wide card with its figure, the
- * other two threads as a pair beneath it.
+ * Research threads — no boxes. The current focus sits beside its figure; the
+ * other two threads sit as a pair beneath it, separated by whitespace and the
+ * hairlines of their paper lists, like the rest of the site.
  ******************************************************************************/
 
 .research {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
-  margin: 1rem 0 0.5rem;
+  gap: 2rem 2.5rem;
+  margin: 1.1rem 0 0.5rem;
 
   @media (max-width: 700px) {
     grid-template-columns: minmax(0, 1fr);
+    gap: 1.75rem;
   }
 }
 
 .research-card {
-  padding: 1.1rem 1.2rem 1.15rem;
-  border: 1px solid var(--x-rule);
-  border-radius: 4px;
-  background-color: var(--x-surface);
-
   h3 {
-    margin: 0 0 0.45rem;
-    font-size: 1.05rem;
+    margin: 0 0 0.4rem;
+    font-size: 1rem;
     font-weight: 600;
     letter-spacing: -0.01em;
     line-height: 1.35;
@@ -204,38 +201,25 @@ html[data-theme="dark"] {
 
   // Out-specify the article prose rhythm, which is set for running text.
   .about-main > article & p {
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.5rem;
     font-size: 0.92rem;
-    line-height: 1.58;
+    line-height: 1.6;
   }
 
   .post-links {
-    margin: 0.9rem 0 0;
+    margin: 0.8rem 0 0;
   }
-}
-
-.research-kicker {
-  display: block;
-  margin-bottom: 0.3rem;
-  color: var(--x-accent);
-  font-size: 0.67rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
 }
 
 .research-feature {
   display: grid;
   grid-column: 1 / -1;
-  grid-template-columns: 14rem minmax(0, 1fr);
-  gap: 1.6rem;
+  grid-template-columns: 10rem minmax(0, 1fr);
+  gap: 1.75rem;
   align-items: center;
-  padding: 1.4rem 1.5rem;
-  border-color: var(--x-accent);
-  background-color: var(--x-accent-soft);
 
   h3 {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
   }
 
   @media (max-width: 700px) {
@@ -250,7 +234,7 @@ html[data-theme="dark"] {
   img {
     display: block;
     width: 100%;
-    max-width: 14rem;
+    max-width: 10rem;
     height: auto;
     transition: transform 0.25s ease;
   }

@@ -51,10 +51,8 @@ I work on meaning in machines: giving it a form they can act on, and finding out
       <img src="{{ '/assets/img/npcbank/capabilities.webp' | relative_url }}" width="640" height="640" alt="The NPCBank capability map: what a character should preserve, and what should follow its state." loading="lazy">
     </a>
     <div class="research-body">
-      <span class="research-kicker">Current focus &middot; Characters</span>
       <h3>NPCBank, the Non-Player Character Bank</h3>
-      <p>A designed world, however beautiful, is still a script. Language models have begun to loosen it, yet between a model that talks and a character that lives, the distance is still wide.</p>
-      <p>I built NPCBank to measure that distance. A living character must change where its state demands change and hold where its identity demands stability, so every case states what a reply must accomplish and what it must preserve, with the evidence behind both open to inspection.</p>
+      <p>Between a model that talks and a character that lives, the distance is still wide. I built NPCBank to measure it: every case states what a reply must change and what it must preserve, with the evidence for both open to inspection.</p>
       <div class="post-links">
         <a href="https://npcbank.org">npcbank.org &#8599;</a>
         <a href="https://npcbank.org/blog-introducing-npcbank.html">Read the introduction &#8599;</a>
@@ -62,7 +60,6 @@ I work on meaning in machines: giving it a form they can act on, and finding out
     </div>
   </div>
   <div class="research-card">
-    <span class="research-kicker">Knowledge</span>
     <h3>What models know</h3>
     <p>Whether large language models can operate on knowledge rather than merely recognise it: ontologies, systematic coverage, retrieval, and reasoning that stays consistent.</p>
     <ul class="research-works">
@@ -72,7 +69,6 @@ I work on meaning in machines: giving it a form they can act on, and finding out
     </ul>
   </div>
   <div class="research-card">
-    <span class="research-kicker">Meaning</span>
     <h3>Meaning made explicit</h3>
     <p>Neural parsing into Discourse Representation Structures, across languages and modalities, and the challenge sets that show where parsers fall over.</p>
     <ul class="research-works">
