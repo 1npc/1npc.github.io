@@ -4,7 +4,7 @@ title: "Some failed ideas in semantic parsing"
 description: Four ideas for DRS and AMR parsing that did not survive a matched baseline — RL post-training, a logic-verified reward, a translation-invariance reward, and DRS as a meaning checker for machine translation.
 tags: semantic-parsing negative-results DRS AMR
 categories: research
-thumbnail: assets/img/semparse-failures/thumb.svg
+thumbnail: assets/img/semparse-failures/notebook.svg
 published: true
 featured: false
 toc:
@@ -12,7 +12,7 @@ toc:
 date: 2026-10-13 12:00:00 +02:00
 ---
 
-{% include figure.liquid path="assets/img/semparse-failures/thumb.svg" width="600" alt="A notebook page listing four ideas for semantic parsing, each crossed out, with red-pen verdicts: SFT did it better, Smatch already knew, pseudo-labels won, a coin flip." class="post-hero" %}
+{% include figure.liquid path="assets/img/semparse-failures/notebook.svg" width="600" alt="A notebook page listing four ideas for semantic parsing, each crossed out, with red-pen verdicts: SFT did it better, Smatch already knew, pseudo-labels won, a coin flip." class="post-hero" %}
 
 Papers report what worked. This post is about four things that did not, from a few days of experiments on parsing text into Discourse Representation Structures (DRS) and Abstract Meaning Representation (AMR). Each idea looked reasonable on paper, and each one fell apart once it was compared with the right baseline. I am writing them down because the reasons they failed are more useful than the ideas themselves.
 

@@ -596,6 +596,9 @@ html[data-theme="dark"] {
 }
 
 .post-hero {
+  display: block;
+  max-width: 100%;
+  height: auto;
   margin: 0 auto 1.6rem;
 }
 
