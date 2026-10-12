@@ -82,6 +82,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_5/";
+            },},{id: "news-structural-automata-for-neural-semantic-parsing-is-on-arxiv",
+          title: 'Structural Automata for Neural Semantic Parsing is on arXiv',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_7/";
             },},{
         id: 'social-email',
         title: 'email',
