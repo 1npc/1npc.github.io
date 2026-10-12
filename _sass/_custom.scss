@@ -595,6 +595,11 @@ html[data-theme="dark"] {
   }
 }
 
+// Keep a post's hero on the text measure too, centred within it.
+figure:has(> picture > .post-hero) {
+  max-width: 46rem;
+}
+
 .post-hero {
   display: block;
   max-width: 100%;
@@ -762,6 +767,8 @@ html[data-theme="dark"] {
 // Theme-matched figure pairs in posts: each chart ships a light and a dark render,
 // and the one matching the current theme is shown.
 .post-figure {
+  // Same measure as the running text, so charts and captions line up with it.
+  max-width: 46rem;
   margin: 1.8rem 0 2rem;
 
   // Charts are drawn at their reading size; never stretch them to the column.
