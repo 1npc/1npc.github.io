@@ -80,32 +80,27 @@ I work on meaning in machines: giving it a form they can act on, and finding out
 
 <!-- lists -->
 
-## The path here
-
-I trained first as an engineer, in information engineering at Xi'an Jiaotong University. The missing linguistics took me to Leiden for a master's with [Suzan Verberne](https://www.universiteitleiden.nl/en/staffmembers/suzan-verberne), between language processing and information retrieval, and in 2022 to Groningen, where I work with [Johan Bos](https://www.rug.nl/staff/johan.bos/?lang=en) and [Gosse Bouma](https://www.rug.nl/staff/g.bouma/?lang=en) on formal meaning and the challenge sets that show where neural parsers fall over.
-
-Four years in, the question has moved from whether a parser gets a sentence right to whether a system knows anything you can hold it to.
+## Education
 
 <div class="timeline">
   <div class="timeline-item">
     <div class="timeline-when">2022 &ndash; now</div>
     <div class="timeline-what">
       <h3>PhD, Computational Linguistics &middot; <a href="https://www.rug.nl/">University of Groningen</a></h3>
-      <p>Computational semantics, neural parsing, and what large language models actually know.</p>
+      <p>Supervised by <a href="https://www.rug.nl/staff/johan.bos/?lang=en">Johan Bos</a> and <a href="https://www.rug.nl/staff/g.bouma/?lang=en">Gosse Bouma</a>.</p>
     </div>
   </div>
   <div class="timeline-item">
     <div class="timeline-when">2020 &ndash; 2022</div>
     <div class="timeline-what">
       <h3>MSc, Computer Science &middot; <a href="https://www.universiteitleiden.nl/en">Leiden University</a></h3>
-      <p>Natural language processing and information retrieval.</p>
+      <p>Supervised by <a href="https://www.universiteitleiden.nl/en/staffmembers/suzan-verberne">Suzan Verberne</a>.</p>
     </div>
   </div>
   <div class="timeline-item">
     <div class="timeline-when">2016 &ndash; 2020</div>
     <div class="timeline-what">
       <h3>BEng, Information Engineering &middot; <a href="https://en.xjtu.edu.cn/">Xi'an Jiaotong University</a></h3>
-      <p>Signals, systems, and enough engineering to be dangerous with a GPU.</p>
     </div>
   </div>
 </div>
