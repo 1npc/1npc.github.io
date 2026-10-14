@@ -2,7 +2,6 @@
 layout: about
 title: About
 permalink: /
-subtitle: PhD candidate in computational linguistics, working on meaning, knowledge, and lately the characters that live in games.
 
 profile:
   align: right
@@ -33,7 +32,7 @@ latest_posts:
   <span class="availability-tag">Open to opportunities</span>
   <p>
     Finishing my PhD in 2026 and looking for a <strong>postdoc or industry research role</strong>
-    in game AI, AI characters, agents, or applied LLM research.
+    in game AI and LLM agents.
   </p>
   <div class="availability-links">
     <a href="mailto:{{ site.data.socials.email | encode_email }}">{{ site.data.socials.email }}</a>
