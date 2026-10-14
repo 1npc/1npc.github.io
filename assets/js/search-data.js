@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-some-failed-ideas-in-semantic-parsing",
+        },{id: "post-the-curse-of-knowledge-in-role-playing-language-models",
+        
+          title: "The curse of knowledge in role-playing language models",
+        
+        description: "Language models that speak as game characters repeat what those characters could not have heard or understood, even when they can say exactly what the character perceives.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/curse-of-knowledge-in-role-play/";
+          
+        },
+      },{id: "post-some-failed-ideas-in-semantic-parsing",
         
           title: "Some failed ideas in semantic parsing",
         
@@ -98,6 +109,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_7/";
+            },},{id: "news-the-curse-of-knowledge-in-role-playing-language-models-is-on-arxiv",
+          title: 'The Curse of Knowledge in Role-Playing Language Models is on arXiv',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_8/";
             },},{
         id: 'social-email',
         title: 'email',
