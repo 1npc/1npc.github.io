@@ -91,4 +91,4 @@ A character who cannot understand Spanish is safest when its model never sees th
 3. **Report permitted use next to leakage.** A model that says nothing passes a leakage test trivially; self-filtering often looks like this.
 4. **Decide access outside the model.** Give the generator what the character can perceive, not the whole scene and a rule about it.
 
-The paper, with all numbers and the full set of models, is [on arXiv](https://arxiv.org/abs/2610.17327). If you build characters on top of a shared world state and have found other ways to keep them from knowing too much, I would like to hear about them.
+The paper, with all numbers and the full set of models, is [on arXiv](https://arxiv.org/abs/2610.17327), and the scenes, prompts, scorer and analysis code are [on GitHub](https://github.com/1npc/curse-of-knowledge-roleplay). If you build characters on top of a shared world state and have found other ways to keep them from knowing too much, I would like to hear about them.
