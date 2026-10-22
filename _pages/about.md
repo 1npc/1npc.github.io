@@ -31,8 +31,8 @@ latest_posts:
 <div class="availability">
   <span class="availability-tag">Open to opportunities</span>
   <p>
-    Finishing my PhD in 2026 and looking for a <strong>postdoc or industry research role</strong>
-    in game AI and LLM agents.
+    Finishing my PhD in 2026 and open to <strong>postdoc or industry research roles</strong>
+    in large language models, including agents and game AI.
   </p>
   <div class="availability-links">
     <a href="mailto:{{ site.data.socials.email | encode_email }}">{{ site.data.socials.email }}</a>
