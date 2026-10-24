@@ -114,7 +114,10 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_8/";
-            },},{
+            },},{id: "news-i-will-join-utrecht-university-as-a-postdoctoral-researcher-in-december-2026",
+          title: 'I will join Utrecht University as a postdoctoral researcher in December 2026.',
+          description: "",
+          section: "News",},{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
