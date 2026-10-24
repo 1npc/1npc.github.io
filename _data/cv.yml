@@ -5,6 +5,8 @@
       value: Xiao Zhang (章潇)
     - name: Position
       value: PhD candidate, Computational Linguistics, University of Groningen
+    - name: Next
+      value: Postdoctoral researcher, Utrecht University, from December 2026
     - name: Email
       value: xiao_is_npc@outlook.com
     - name: Website
@@ -19,8 +21,8 @@
       institution: University of Groningen, Groningen, The Netherlands
       year: 2022 – now
       description:
+        - "Thesis <em>Structure as Evidence</em>, submitted; defence February 2027."
         - Supervised by Johan Bos and Gosse Bouma.
-        - Computational semantics, neural semantic parsing, and the evaluation of knowledge and reasoning in large language models.
     - title: MSc, Computer Science
       institution: Leiden University, Leiden, The Netherlands
       year: 2020 – 2022
@@ -109,7 +111,7 @@
 - title: Academic Service
   type: list
   contents:
-    - "<strong>Reviewer</strong> — ACL Rolling Review (multiple cycles), ACM Multimedia 2025, IEEE WCCI 2025, IWCS 2025, among others"
+    - "<strong>Reviewer</strong> — NeurIPS, ICLR, ACL Rolling Review (multiple cycles), ACM Multimedia, IEEE WCCI, IWCS, among others"
 # ---------------------------------------------------------------------------
 # Sections below are scaffolding. Uncomment and fill in as they apply — the
 # page renders whatever is present here and silently skips what is not.

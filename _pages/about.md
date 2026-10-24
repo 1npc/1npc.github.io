@@ -29,10 +29,9 @@ latest_posts:
 ---
 
 <div class="availability">
-  <span class="availability-tag">Open to opportunities</span>
+  <span class="availability-tag">Next</span>
   <p>
-    Finishing my PhD in 2026 and open to <strong>postdoc or industry research roles</strong>
-    in large language models, including agents and game AI.
+    From December 2026 I will be a <strong>postdoctoral researcher at Utrecht University</strong>.
   </p>
   <div class="availability-links">
     <a href="mailto:{{ site.data.socials.email | encode_email }}">{{ site.data.socials.email }}</a>
@@ -55,6 +54,7 @@ I work on meaning in machines: giving it a form they can act on, and finding out
       <div class="post-links">
         <a href="https://npcbank.org">npcbank.org &#8599;</a>
         <a href="https://npcbank.org/blog-introducing-npcbank.html">Read the introduction &#8599;</a>
+        <a href="{{ '/blog/2026/curse-of-knowledge-in-role-play/' | relative_url }}">The curse of knowledge</a>
       </div>
     </div>
   </div>
@@ -71,6 +71,7 @@ I work on meaning in machines: giving it a form they can act on, and finding out
     <h3>Meaning made explicit</h3>
     <p>Neural parsing into Discourse Representation Structures, across languages and modalities, and the challenge sets that show where parsers fall over.</p>
     <ul class="research-works">
+      <li><a href="https://arxiv.org/abs/2610.13896">Structural automata</a> <span>arXiv 2026</span></li>
       <li><a href="https://aclanthology.org/2025.cl-1.7/">Taxonomical parsing</a> <span>Computational Linguistics 2025</span></li>
       <li><a href="https://aclanthology.org/2025.iwcs-main.5/">Retrieval-augmented parsing</a> <span>IWCS 2025</span></li>
       <li><a href="https://doi.org/10.1145/3746027.3755444">Tombstone inscriptions</a> <span>ACM Multimedia 2025</span></li>
@@ -87,7 +88,7 @@ I work on meaning in machines: giving it a form they can act on, and finding out
     <div class="timeline-when">2022 &ndash; now</div>
     <div class="timeline-what">
       <h3>PhD, Computational Linguistics &middot; <a href="https://www.rug.nl/">University of Groningen</a></h3>
-      <p>Supervised by <a href="https://www.rug.nl/staff/johan.bos/?lang=en">Johan Bos</a> and <a href="https://www.rug.nl/staff/g.bouma/?lang=en">Gosse Bouma</a>.</p>
+      <p>Supervised by <a href="https://www.rug.nl/staff/johan.bos/?lang=en">Johan Bos</a> and <a href="https://www.let.rug.nl/gosse/">Gosse Bouma</a>.</p>
     </div>
   </div>
   <div class="timeline-item">
