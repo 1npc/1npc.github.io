@@ -28,17 +28,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-<div class="availability">
-  <span class="availability-tag">Next</span>
-  <p>
-    From December 2026 I will be a <strong>postdoctoral researcher at Utrecht University</strong>.
-  </p>
-  <div class="availability-links">
-    <a href="mailto:{{ site.data.socials.email | encode_email }}">{{ site.data.socials.email }}</a>
-    <a href="{{ '/cv/' | relative_url }}">CV</a>
-  </div>
-</div>
-
 I work on meaning in machines: giving it a form they can act on, and finding out when they get it wrong. The work began in computational semantics, grew into the question of what large language models actually know, and has lately turned toward the characters that live in games.
 
 ## Research

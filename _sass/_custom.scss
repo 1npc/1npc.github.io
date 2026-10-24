@@ -132,47 +132,6 @@ html[data-theme="dark"] {
 }
 
 /*******************************************************************************
- * Availability callout
- ******************************************************************************/
-
-.availability {
-  margin: 0 0 1.35rem;
-  padding: 0.7rem 0.9rem;
-  border-left: 2px solid var(--x-accent);
-  border-radius: 0 3px 3px 0;
-  background-color: var(--x-accent-soft);
-
-  p {
-    margin: 0;
-    font-size: 0.9rem;
-    line-height: 1.55;
-  }
-
-  a {
-    font-weight: 500;
-  }
-}
-
-.availability-tag {
-  display: block;
-  margin-bottom: 0.15rem;
-  color: var(--x-accent);
-  font-size: 0.67rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-// Inline, the long address pushed "CV" onto a line of its own. Give the two
-// actions their own row so they read as actions and never orphan.
-.availability-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-  margin-top: 0.6rem;
-}
-
-/*******************************************************************************
  * Research threads — no boxes. The current focus sits beside its figure; the
  * other two threads sit as a pair beneath it, separated by whitespace and the
  * hairlines of their paper lists, like the rest of the site.
@@ -614,9 +573,8 @@ figure:has(> picture > .post-hero) {
   margin: 1.4rem 0 1.8rem;
 }
 
-// One chip idiom, used by the homepage callout and by post link rows.
-.post-links a,
-.availability-links a {
+// One chip idiom for link rows in posts and on the homepage.
+.post-links a {
   padding: 0.28rem 0.7rem;
   border: 1px solid var(--x-rule);
   border-radius: 3px;
