@@ -10,9 +10,9 @@ profile:
   image_circular: false
   more_info: >
     <p><strong>Xiao Zhang</strong> &nbsp;章潇</p>
-    <p>PhD candidate</p>
-    <p>Computational Linguistics</p>
-    <p>University of Groningen</p>
+    <p>Computational linguist</p>
+    <p>PhD candidate, University of Groningen</p>
+    <p>Incoming postdoc, Utrecht University</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -70,9 +70,15 @@ I work on meaning in machines: giving it a form they can act on, and finding out
 
 <!-- lists -->
 
-## Education
+## Background
 
 <div class="timeline">
+  <div class="timeline-item">
+    <div class="timeline-when">Dec 2026 &ndash;</div>
+    <div class="timeline-what">
+      <h3>Postdoctoral researcher &middot; <a href="https://www.uu.nl/en">Utrecht University</a></h3>
+    </div>
+  </div>
   <div class="timeline-item">
     <div class="timeline-when">2022 &ndash; now</div>
     <div class="timeline-what">
